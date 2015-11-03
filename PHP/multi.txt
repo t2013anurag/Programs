@@ -1,0 +1,5 @@
+SELECT staffNo, fName, sName, position
+	FROM Staff
+	WHERE branchNo=(SELECT branchNo
+				     FROM Branch
+				     WHERE street LIKE '%163Main%');

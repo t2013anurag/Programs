@@ -1,0 +1,38 @@
+Listing Databases, columns and displaying resource, client, server information: listdbs.php
+<?php
+$username="root";
+$password = "";
+$hostname="localhost";
+$con = mysqli_connect($hostname,$username,$password) or
+								die(mysql_error());
+$sql="SHOW DATABASES";
+$result = mysqli_query($con, $sql);
+while ($row = mysqli_fetch_array($result)) {
+    echo $row[0]."<br>";
+}
+mysqli_free_result($result);
+mysqli_close($con);
+
+$con = mysql_connect($hostname,$username,$password) or die(mysql_error());
+echo "DB Resource ".get_resource_type($con) . "<br>";
+  // prints: file
+$fp = fopen("pconnect.php", "w");
+echo "File Pointer ".$fp."<br>";
+echo "Resource Info ".get_resource_type($fp)."<br>";
+echo "SErver ".mysql_get_server_info($con)."<br>";
+echo "Client".  mysqli_get_client_info($con);
+mysql_close($con);
+
+$dbname="mydb";
+$con = mysqli_connect($hostname,$username,$password) or die(mysql_error());
+mysqli_select_db($con,$dbname);
+$result = mysqli_query($con, "SHOW COLUMNS FROM Myguests") or die(mysql_error());
+echo "<centre><h1> Fields of Mytab</h1> </centre><br>";
+while ($row = mysqli_fetch_assoc($result))
+  {
+        print_r($row);
+         echo "<br>";
+ }
+
+mysqli_close($con);
+?>
