@@ -1,0 +1,16 @@
+import java.io.*;
+import java.net.*;
+
+
+public class udps {
+	public static void main(String[] args) throws Exception
+	 {
+	  DatagramSocket sk = new DatagramSocket(1000);
+     	  byte[] buf = new byte[1000];
+  	  DatagramPacket out = new DatagramPacket(buf, buf.length, "localhost", 1000); 
+	  String outMessage = "This is UDP packet,  Hello Clinet";		
+	  System.out.println("Server started");
+	  buf = ("Server say: " + outMessage).getBytes();
+          sk.send(out);
+     	}
+	}

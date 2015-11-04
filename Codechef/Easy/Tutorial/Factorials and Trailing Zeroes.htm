@@ -1,0 +1,509 @@
+
+<!-- saved from url=(0046)http://www.purplemath.com/modules/factzero.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script async="" src="./Factorials and Trailing Zeroes_files/beacon.js"></script><script src="./Factorials and Trailing Zeroes_files/jquery-1.4.4.min.js"></script><script src="./Factorials and Trailing Zeroes_files/ask"></script><script type="text/javascript" async="" src="./Factorials and Trailing Zeroes_files/ga.js"></script><script type="text/javascript">
+function breakOut() {
+  if (self != top) {
+         window.open("http://www.purplemath.com/index.htm","_top","toolbar=yes,location=yes,directories=yes,status=yes,menubar=yes,scrollbars=yes,copyhistory=yes,resizable=yes");		}
+}
+</script>
+<title>Factorials and Trailing Zeroes</title>
+
+<meta name="author" content="Elizabeth Stapel">
+<meta name="copyright" content="Copyright (C) Elizabeth Stapel 2014 All Rights Reserved">
+<meta name="description" content="Explains how to find the number of trailing zeroes on any given factorial, and gives a method for quickly finding the answer.">
+<meta name="keywords" content="factorial, factor, end, ending, trailing, zero, zeroes, how, many, algebra, lesson, homework, Purplemath">
+<meta name="robots" content="index, follow">
+<!--<base target="_top">--><base href="." target="_top">
+<link rel="icon" href="http://www.purplemath.com/modules/purple.png" type="image/png">
+<link href="./Factorials and Trailing Zeroes_files/styles.css" rel="stylesheet" type="text/css">
+<link href="./Factorials and Trailing Zeroes_files/pm_nav.css" rel="stylesheet" type="text/css">
+<link href="./Factorials and Trailing Zeroes_files/free_search.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20509558-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><style type="text/css"></style>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0" onload="breakOut();">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="790" bgcolor="white">
+  <tbody><tr>
+    <td bgcolor="white" width="790" height="10"><p><font face="Arial" size="1"><a href="http://www.purplemath.com/modules/members.htm?id=8584" onmouseover="window.status=&#39;&#39;; return true;" onclick="return false;"><img src="./Factorials and Trailing Zeroes_files/id_13.gif" width="1" height="1" border="0"></a>&nbsp;</font></p></td>
+  </tr>
+  <tr>
+    <td bgcolor="#D7BB7C" width="790" height="10"><p><font face="Arial" size="1"><a name="top">&nbsp;</a></font></p></td>
+  </tr>
+</tbody></table>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="790" bgcolor="white">
+  <tbody><tr>
+    <td bgcolor="white" width="200"><p><a href="http://www.purplemath.com/index.htm"><img src="./Factorials and Trailing Zeroes_files/logo.gif" width="195" height="75" border="0" alt="Return to the Purplemath home page" vspace="0" hspace="0"></a></p></td>
+    <td width="175" align="center" bgcolor="white"><p>&nbsp;</p></td>
+    <td bgcolor="white" width="415"><div id="mathhelp_header_buttons" align="right"><a href="http://www.purplemathplus.com/purplemath/demo.php" title="Try a MathHelp.com demo lesson" target="_blank"><img src="./Factorials and Trailing Zeroes_files/btn_demo.gif" alt="Try a MathHelp.com demo lesson" width="191" height="65" align="absmiddle" style="margin-right:10px;"></a>
+  <a href="http://www.mathhelp.com/store-subscription.php" title="Join MathHelp.com"><img src="./Factorials and Trailing Zeroes_files/btn_join.gif" alt="Join MathHelp.com" width="106" height="65" align="absmiddle" style="margin-right:10px;"></a>
+  <a href="http://www.mathhelp.com/lessons/main/login-purplemathplus.php" title="Login to MathHelp.com"><img src="./Factorials and Trailing Zeroes_files/btn_login.gif" alt="Login to MathHelp.com" width="89" height="65" align="absmiddle"></a>
+</div></td>
+  </tr>
+</tbody></table>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="790">
+  <tbody><tr>
+    <td width="600" bgcolor="white" align="left" valign="top">
+    
+	<table align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="purple">
+        <tbody><tr>
+          <td bgcolor="purple" width="600">
+            <p><font face="Arial" size="1">&nbsp;</font></p>
+          </td>
+        </tr>
+	</tbody></table>
+    
+	<table align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="white" valign="top">
+        <tbody><tr>
+          <td bgcolor="white" width="600">
+            <p><font face="Arial" size="1"><a href="http://www.purplemath.com/modules/index.htm">Index of free lessons</a> | <a href="http://www.purplemath.com/lessoncd.htm">PM's free lessons in offline form</a> | <a href="http://www.purplemath.com/learning/index.php">Forums</a> | <a href="http://www.purplemath.com/modules/factzero.htm#openModal">Search free lessons</a> | <a href="http://www.purplemath.com/modules/printpage.cgi?path=/modules/factzero.htm" rel="nofollow">Print this page</a> | <a href="http://www.purplemath.com/math_tutors.php">Local tutors</a></font></p>
+            <div id="openModal" class="modalDialog">
+	<div align="center">
+		<a href="http://www.purplemath.com/modules/factzero.htm#close" title="Close" class="close">X</a>
+      <form action="http://search.freefind.com/find.html" method="GET" target="_self">
+        <input type="HIDDEN" name="id" value="5014414"><input type="HIDDEN" name="pageid" value="r"> 
+        <input type="HIDDEN" name="mode" value="ALL"><input type="HIDDEN" name="n" value="0">
+        <input type="TEXT" name="query" size="25"><input type="SUBMIT" value=" Search ">
+      </form>
+	</div>
+</div>
+          </td>
+        </tr>
+	</tbody></table>
+      <p>
+        <!--StartPrintMe-->
+        <!--PrintHidden<p>-->
+        <font face="Arial" size="5" color="purple"><i><b>Factorials 
+      and Trailing Zeroes</b></i></font></p>
+      <hr>
+      <p><font face="Arial" size="2" color="#000000">You're probably reading 
+        this page because you've been assigned a seemingly impossible exercise, 
+        something along the lines of "Here's a really big number; consider 
+        its much bigger factorial and then figure out how many zeroes are at the 
+        end of the multiplied-out factorial."</font></p>
+      <p><font face="Arial" size="2" color="#000000">This "trailing zeroes 
+        in a factorial" exercise is pretty easy to answer once you think 
+        about it the right way. I couldn't find anything much useful on the Internet, 
+        so here's a little lesson on how to handle it.</font></p>
+      <ul>
+        <li><font face="Arial" size="2" color="green"><b>Find the number of 
+          trailing zeroes in the expansion of </b></font><font face="Times New Roman" size="3" color="green"><b>23!</b></font></li>
+        <p><font face="Arial" size="2" color="#000000">If I try to plug this 
+          into my calculator, I'll get something in scientific notation, because 
+          the answer is too big for the calculator to display. In practical terms, 
+          the calculator will show me the beginning of the number, and I'm only 
+          caring about the end of the number (the "trailing" part). 
+          So the calculator won't help. I'll try expanding the factorial:</font></p>
+      </ul>
+      <p align="center"><font face="Times New Roman" size="3" color="#000000">1×2×3×4×5×6×7×8×9×10×11×12×13×14×15×16×17×18×19×20×21×22×23</font></p>
+      <!--StartDeleteMe-->
+      <table border="0" cellpadding="0" cellspacing="0" width="320" align="right">
+        <tbody><tr>
+          <td width="20"><p align="center">&nbsp;</p></td>
+          <td width="300"><p align="center"><font face="Arial" size="1">ADVERTISEMENT</font></p></td>
+        </tr>
+        <tr>
+          <td width="20"><p align="center">&nbsp;</p></td>
+          <td width="300" height="250"><p align="center">
+            <script type="text/javascript">
+<!--
+google_ad_client = "ca-pub-0863636157410944";
+/* box */
+google_ad_slot = "6293655646";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+            
+            
+            
+            
+            </script>
+            <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            
+            </script>
+          </p></td>
+        </tr>
+      </tbody></table>
+      <!--EndDeleteMe-->
+      <ul>
+        <p><font face="Arial" size="2" color="#000000">I know that a number 
+          gets a zero at the end of it if the number has </font><font face="Times New Roman" size="3" color="#000000">10</font><font face="Arial" size="2" color="#000000"> as a factor. For instance, </font><font face="Times New Roman" size="3" color="#000000">10</font><font face="Arial" size="2" color="#000000"> is a factor of </font><font face="Times New Roman" size="3" color="#000000">50</font><font face="Arial" size="2" color="#000000">, </font><font face="Times New Roman" size="3" color="#000000">120</font><font face="Arial" size="2" color="#000000">, 
+            and </font><font face="Times New Roman" size="3" color="#000000">1234567890</font><font face="Arial" size="2" color="#000000">. 
+              So I need to find out how many times </font><font face="Times New Roman" size="3" color="#000000">10</font><font face="Arial" size="2" color="#000000"> is a factor in the expansion of </font><font face="Times New Roman" size="3" color="#000000">23!</font><font face="Arial" size="2" color="#000000">.</font></p>
+        <p><font face="Arial" size="2" color="#000000">But since </font><font face="Times New Roman" size="3" color="#000000">5×2 
+          = 10</font><font face="Arial" size="2" color="#000000">, I need to account 
+            for all the products of </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000"> and </font><font face="Times New Roman" size="3" color="#000000">2</font><font face="Arial" size="2" color="#000000">. 
+              Looking at the factors in the above expansion, there are many more numbers 
+              that are multiples of </font><font face="Times New Roman" size="3" color="#000000">2 
+                (2, 4, 6, 8, 10, 12, 14,...)</font><font face="Arial" size="2" color="#000000"> than are multiples of </font><font face="Times New Roman" size="3" color="#000000">5 
+                  (5, 10, 15,...)</font><font face="Arial" size="2" color="#000000">. 
+                    That is, if I take all the numbers with </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000"> as a factor, I'll have way more than enough even numbers to pair with 
+                      them to get factors of </font><font face="Times New Roman" size="3" color="#000000">10</font><font face="Arial" size="2" color="#000000"> (and another trailing zero on my factorial). So to find the number of 
+                        times </font><font face="Times New Roman" size="3" color="#000000">10</font><font face="Arial" size="2" color="#000000"> is a factor, all I really need to worry about is how many times </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000"> is a factor in all of the numbers between </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000"> and </font><font face="Times New Roman" size="3" color="#000000">23</font><font face="Arial" size="2" color="#000000">.</font><br clear="right">
+        </p>
+        <p><font face="Arial" size="2" color="#000000">How many multiples of </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000"> are between </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000"> and </font><font face="Times New Roman" size="3" color="#000000">23</font><font face="Arial" size="2" color="#000000">? 
+          There is </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000">, </font><font face="Times New Roman" size="3" color="#000000">10</font><font face="Arial" size="2" color="#000000">, </font><font face="Times New Roman" size="3" color="#000000">15</font><font face="Arial" size="2" color="#000000">, 
+            and </font><font face="Times New Roman" size="3" color="#000000">20</font><font face="Arial" size="2" color="#000000">, 
+              for four multiples of </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000">. 
+                Paired with </font><font face="Times New Roman" size="3" color="#000000">2</font><font face="Arial" size="2" color="#000000">'s 
+                  from the even factors, this makes for four factors of </font><font face="Times New Roman" size="3" color="#000000">10</font><font face="Arial" size="2" color="#000000">, 
+                    so:</font></p>
+        <ul>
+          <p><font face="Times New Roman" size="3" color="purple"><b>23!</b></font><font face="Arial" size="2" color="purple"><b> has four trailing zeroes</b></font>
+            <!--StartDeleteMe-->
+            <font color="#FFFFFF" face="Arial" size="1">&nbsp;&nbsp;Copyright 
+              © Elizabeth Stapel 2004-2011 All Rights Reserved</font>
+            <!--EndDeleteMe-->
+          </p>
+        </ul>
+      </ul>
+      <ul>
+        <li><font face="Arial" size="2" color="green"><b>Find the number of 
+          trailing zeroes in </b></font><font face="Times New Roman" size="3" color="green"><b>101!</b></font></li>
+        <p><font face="Arial" size="2" color="#000000">Okay, how many multiples 
+          of </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000"> are there in the numbers from </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000"> to </font><font face="Times New Roman" size="3" color="#000000">101</font><font face="Arial" size="2" color="#000000">? 
+            There's </font><font face="Times New Roman" size="3" color="#000000">5, 
+              10, 15, 20, 25,</font><font face="Arial" size="2" color="#000000">...</font></p>
+        <p><font face="Arial" size="2" color="#000000">Oh, heck; let's do this 
+          the short way: </font><font face="Times New Roman" size="3" color="#000000">100</font><font face="Arial" size="2" color="#000000"> is the closest multiple of </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000"> below </font><font face="Times New Roman" size="3" color="#000000">101</font><font face="Arial" size="2" color="#000000">, 
+            and </font><font face="Times New Roman" size="3" color="#000000">100 
+              ÷ 5 = 20</font><font face="Arial" size="2" color="#000000">, so there 
+                are twenty multiples of </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000"> between </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000"> and </font><font face="Times New Roman" size="3" color="#000000">101</font><font face="Arial" size="2" color="#000000">.</font></p>
+        <p><font face="Arial" size="2" color="#000000">But wait: </font><font face="Times New Roman" size="3" color="#000000">25</font><font face="Arial" size="2" color="#000000"> is </font><font face="Times New Roman" size="3" color="#000000">5×5</font><font face="Arial" size="2" color="#000000">, 
+          so each multiple of </font><font face="Times New Roman" size="3" color="#000000">25</font><font face="Arial" size="2" color="#000000"> has an extra factor of </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000"> that I need to account for. How many multiples of </font><font face="Times New Roman" size="3" color="#000000">25</font><font face="Arial" size="2" color="#000000"> are between </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000"> and </font><font face="Times New Roman" size="3" color="#000000">101</font><font face="Arial" size="2" color="#000000">? 
+            Since </font><font face="Times New Roman" size="3" color="#000000">100 
+              ÷ 25 = 4</font><font face="Arial" size="2" color="#000000">, there are 
+                four multiples of </font><font face="Times New Roman" size="3" color="#000000">25</font><font face="Arial" size="2" color="#000000"> between </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000"> and </font><font face="Times New Roman" size="3" color="#000000">101</font><font face="Arial" size="2" color="#000000">.</font></p>
+        <ul>
+          <p><font face="Arial" size="2" color="#000000">Adding these, I get </font><font face="Times New Roman" size="3" color="#000000">20 + 
+            4 = </font><font face="Times New Roman" size="3" color="purple"><b>24</b></font><font face="Arial" size="2" color="purple"><b> trailing zeroes in </b></font><font face="Times New Roman" size="3" color="purple"><b>101!</b></font></p>
+        </ul>
+      </ul>
+      <p><font face="Arial" size="2" color="#000000">This reasoning extends 
+        to working with larger numbers.</font></p>
+      <ul>
+        <li><font face="Arial" size="2" color="green"><b>Find the number of 
+          trailing zeroes in the expansion of </b></font><font face="Times New Roman" size="3" color="green"><b>1000!</b></font></li>
+      </ul>
+      <ul>
+        <p><font face="Arial" size="2" color="#000000">Okay, there are </font><font face="Times New Roman" size="3" color="#000000">1000 
+          ÷ 5 = 200</font><font face="Arial" size="2" color="#000000"> multiples 
+            of </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000"> between </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000"> and </font><font face="Times New Roman" size="3" color="#000000">1000</font><font face="Arial" size="2" color="#000000">. 
+              The next power of </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000">, 
+                namely </font><font face="Times New Roman" size="3" color="#000000">25</font><font face="Arial" size="2" color="#000000">, 
+                  has </font><font face="Times New Roman" size="3" color="#000000">1000 
+                    ÷ 25 = 40</font><font face="Arial" size="2" color="#000000"> multiples 
+                      between </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000"> and </font><font face="Times New Roman" size="3" color="#000000">1000</font><font face="Arial" size="2" color="#000000">. 
+                        The next power of </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000">, 
+                          namely </font><font face="Times New Roman" size="3" color="#000000">125</font><font face="Arial" size="2" color="#000000">, 
+                            will also fit in the expansion, and has </font><font face="Times New Roman" size="3" color="#000000">1000 
+                              ÷ 125 = 8</font><font face="Arial" size="2" color="#000000"> multiples 
+                                between </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000"> and </font><font face="Times New Roman" size="3" color="#000000">1000</font><font face="Arial" size="2" color="#000000">. 
+                                  The next power of </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000">, 
+                                    namely </font><font face="Times New Roman" size="3" color="#000000">625</font><font face="Arial" size="2" color="#000000">, 
+                                      also fits in the expansion, and has </font><font face="Times New Roman" size="3" color="#000000">1000 
+                                        ÷ 625 = 1.6</font><font face="Arial" size="2" color="#000000">... um, 
+                                          okay, </font><font face="Times New Roman" size="3" color="#000000">625</font><font face="Arial" size="2" color="#000000"> has </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000"> multiple between </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000"> and </font><font face="Times New Roman" size="3" color="#000000">1000</font><font face="Arial" size="2" color="#000000">. 
+                                            (I don't care about the </font><font face="Times New Roman" size="3" color="#000000">0.6</font><font face="Arial" size="2" color="#000000"> "multiples", only the one full multiple, so I truncate my 
+                                              division down to a whole number.)</font></p>
+        <p><font face="Arial" size="2" color="#000000">In total, I have </font><font face="Times New Roman" size="3" color="#000000">200 
+          + 40 + 8 + 1 = 249</font><font face="Arial" size="2" color="#000000"> copies of the factor </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000"> in the expansion, and thus:</font><font face="Times New Roman" size="3" color="#000000"> </font>
+          <!--  Copyright &copy; Elizabeth Stapel 2004-2011 All Rights Reserved // -->
+        </p>
+        <ul>
+          <p><font face="Times New Roman" size="3" color="purple"><b>249</b></font><font face="Arial" size="2" color="purple"><b> trailing zeroes in the expansion of </b></font><font face="Times New Roman" size="3" color="purple"><b>1000!</b></font></p>
+        </ul>
+      </ul>
+      <p><font face="Arial" size="2" color="#000000">The previous example highlights 
+        the general method for answering this question, no matter what factorial 
+        they give you.</font></p>
+      <ul>
+        <li><font face="Arial" size="2" color="#000000">Take the number that 
+          you've been given the factorial of.</font></li>
+        <li><font face="Arial" size="2" color="#000000">Divide by </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000">; 
+          if you get a decimal, truncate to a whole number.</font></li>
+        <li><font face="Arial" size="2" color="#000000">Divide by </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Times New Roman" size="3" color="black"><sup>2</sup></font><font face="Times New Roman" size="3" color="#000000"> = 25</font><font face="Arial" size="2" color="#000000">; if you get 
+          a decimal, truncate to a whole number.</font></li>
+        <li><font face="Arial" size="2" color="#000000">Divide by </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Times New Roman" size="3" color="black"><sup>3</sup></font><font face="Times New Roman" size="3" color="#000000"> = 125</font><font face="Arial" size="2" color="#000000">; if you get 
+          a decimal, truncate to a whole number.</font></li>
+        <li><font face="Arial" size="2" color="#000000">Continue with ever-higher 
+          powers of </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000">, 
+            until your division results in a number less than </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000">. 
+              Once the division&nbsp;is less than </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000">, 
+                stop.</font></li>
+        <li><font face="Arial" size="2" color="#000000">Sum all the whole numbers 
+          you got in your divisions. This is the number of trailing zeroes.</font></li>
+      </ul>
+      <p><font face="Arial" size="2" color="#000000">Here's how the process 
+        works:</font></p>
+      <ul>
+        <li><font face="Arial" size="2" color="green"><b>How many trailing zeroes 
+          would be found in </b></font><font face="Times New Roman" size="3" color="green"><b>4617!</b></font><font face="Arial" size="2" color="green"><b>, 
+            upon expansion?</b></font></li>
+        <p><font face="Arial" size="2" color="#000000">I'll apply the procedure 
+          from above:</font></p>
+        <ul>
+          <li><font face="Times New Roman" size="3" color="#000000">5</font><font face="Times New Roman" size="3" color="black"><sup>1</sup></font><font face="Times New Roman" size="3" color="#000000"> : &nbsp;4617 ÷ 5 = 923.4</font><font face="Arial" size="2" color="#000000">, 
+            so I get </font><font face="Times New Roman" size="3" color="#000000">923</font><font face="Arial" size="2" color="#000000"> factors of </font><font face="Times New Roman" size="3" color="#000000">5</font></li>
+          <li><font face="Times New Roman" size="3" color="#000000">5</font><font face="Times New Roman" size="3" color="black"><sup>2</sup></font><font face="Times New Roman" size="3" color="#000000"> : &nbsp;4617 ÷ 25 = 184.68,</font><font face="Arial" size="2" color="#000000"> so I get </font><font face="Times New Roman" size="3" color="#000000">184</font><font face="Arial" size="2" color="#000000"> additional factors of </font><font face="Times New Roman" size="3" color="#000000">5</font></li>
+          <li><font face="Times New Roman" size="3" color="#000000">5</font><font face="Times New Roman" size="3" color="black"><sup>3</sup></font><font face="Times New Roman" size="3" color="#000000"> : &nbsp;4617 ÷ 125 = 36.936,</font><font face="Arial" size="2" color="#000000"> so I get </font><font face="Times New Roman" size="3" color="#000000">36</font><font face="Arial" size="2" color="#000000"> additional factors of </font><font face="Times New Roman" size="3" color="#000000">5</font></li>
+          <li><font face="Times New Roman" size="3" color="#000000">5</font><font face="Times New Roman" size="3" color="black"><sup>4</sup></font><font face="Times New Roman" size="3" color="#000000"> : &nbsp;4617 ÷ 625 = 7.3872,</font><font face="Arial" size="2" color="#000000"> so I get </font><font face="Times New Roman" size="3" color="#000000">7</font><font face="Arial" size="2" color="#000000"> additional factors of </font><font face="Times New Roman" size="3" color="#000000">5</font></li>
+          <li><font face="Times New Roman" size="3" color="#000000">5</font><font face="Times New Roman" size="3" color="black"><sup>5</sup></font><font face="Times New Roman" size="3" color="#000000"> : &nbsp;4617 ÷ 3125 = 1.47744,</font><font face="Arial" size="2" color="#000000"> so I get </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000"> more factor of </font><font face="Times New Roman" size="3" color="#000000">5</font></li>
+          <li><font face="Times New Roman" size="3" color="#000000">5</font><font face="Times New Roman" size="3" color="black"><sup>6</sup></font><font face="Times New Roman" size="3" color="#000000"> : &nbsp;4617 ÷ 15625 = 0.295488,</font><font face="Arial" size="2" color="#000000"> which is less than </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000">, 
+            so I stop here.</font></li>
+          <p><font face="Arial" size="2" color="#000000">Then </font><font face="Times New Roman" size="3" color="purple"><b>4617!</b></font><font face="Arial" size="2" color="purple"><b> has </b></font><font face="Times New Roman" size="3" color="purple"><b>923 
+            + 184 + 36 + 7 + 1 = 1151</b></font><font face="Arial" size="2" color="purple"><b> trailing zeroes.</b></font></p>
+        </ul>
+      </ul>
+      <p><font face="Arial" size="2" color="#000000">By the way, you can get 
+        the same result, </font><font face="Arial" size="2" color="black"><i>if</i></font><font face="Arial" size="2" color="#000000"> you keep track as you go, by just dividing repeatedly in your calculator 
+          by </font><font face="Times New Roman" size="3" color="#000000">5</font><font face="Arial" size="2" color="#000000">'s: </font><font face="Times New Roman" size="3" color="#000000">4617 ÷&nbsp;5 
+            = 923.4</font><font face="Arial" size="2" color="#000000"> (write down </font><font face="Times New Roman" size="3" color="#000000">923</font><font face="Arial" size="2" color="#000000">), </font><font face="Times New Roman" size="3" color="#000000">923.4 ÷ 5 
+              = 184.68</font><font face="Arial" size="2" color="#000000"> (write down </font><font face="Times New Roman" size="3" color="#000000">184</font><font face="Arial" size="2" color="#000000">), </font><font face="Times New Roman" size="3" color="#000000">184.68 ÷&nbsp;5 
+                = 36.936</font><font face="Arial" size="2" color="#000000"> (write down </font><font face="Times New Roman" size="3" color="#000000">36</font><font face="Arial" size="2" color="#000000">), </font><font face="Times New Roman" size="3" color="#000000">36.936 ÷ 
+                  5 = 7.3827</font><font face="Arial" size="2" color="#000000"> (write down </font><font face="Times New Roman" size="3" color="#000000">7</font><font face="Arial" size="2" color="#000000">), </font><font face="Times New Roman" size="3" color="#000000">7.3827 ÷&nbsp;5 
+                    = 1.47744</font><font face="Arial" size="2" color="#000000"> (write down </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000">), 
+                      and </font><font face="Times New Roman" size="3" color="#000000">1.47744 
+                        ÷&nbsp;5</font><font face="Arial" size="2" color="#000000"> is goint to 
+                          be less than </font><font face="Times New Roman" size="3" color="#000000">1</font><font face="Arial" size="2" color="#000000">, 
+                            so you're done. Turn to your scratch paper were you've written down the 
+                            whole numbers, and sum them to get </font><font face="Times New Roman" size="3" color="#000000">1151</font><font face="Arial" size="2" color="#000000">.</font></p>
+      <p><font face="Arial" size="2" color="#000000">Note: Software like Excel 
+        won't help with this sort of computation, any more than your calculator 
+        would. Software customarily only stores fifteen or so digits of "accuracy", 
+        which is why, after a number gets sufficiently large, the display switches 
+        automatically to scientific notation. Since the software is only storing 
+        the first few leading digits, the remaining trailing digits have to be 
+        filled in with zeroes. If you attempt the first expansion above, "</font><font face="Times New Roman" size="3" color="#000000">23!</font><font face="Arial" size="2" color="#000000">",&nbsp;in 
+          Excel, you'll get something with way more zeroes than is actually true. 
+          In other words, the computer will give you the wrong answer. So learn 
+          the concepts; don't try to cheat with software.
+          <!--PrintHidden </font></p><hr><p><font color="#000000" face="Courier New" size="2">Original URL: http://www.purplemath.com/modules/factzero.htm -->
+          <!--EndPrintMe-->
+        </font></p>
+      <p align="center"><font face="Arial" size="2"><a href="http://www.purplemath.com/modules/factzero.htm#top">Top</a> &nbsp;| &nbsp;<a href="http://www.purplemath.com/modules/index.htm">Return to Index</a></font></p>
+      <table border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="white">
+        <tbody><tr>
+          <td valign="top" bgcolor="white" width="100">
+            <p><font face="Arial" size="1" color="#666666">Cite this article 
+            as:</font></p>
+          </td>
+          <td valign="top" bgcolor="white" width="500">
+            <p><font face="Arial" size="1" color="#666666">Stapel, Elizabeth. 
+            "Factorials and Trailing Zeroes." <u>Purplemath</u>. Available from<br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;<u>http://www.purplemath.com/modules/factzero.htm</u>. 
+            Accessed <script type="text/JavaScript">
+  <!--
+    var now = new Date();
+    var months = new Array(
+      'January','February','March','April','May',
+      'June','July','August','September','October',
+      'November','December');
+    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+    function fourdigityear(number)	{
+      return (number < 1000) ? number + 1900 : number;}
+    accessdate =  date + " " + 
+       months[now.getMonth()] + " " +
+       (fourdigityear(now.getYear()));
+     document.write(accessdate);
+  //--></script>07 September 2014<noscript>[Date] [Month] 2014</noscript><br> &nbsp;</font></p>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+    <td width="10" align="left" valign="top">
+      <p><font face="Arial" size="1">&nbsp;</font></p>
+    </td>
+    <td width="180" align="left" valign="top" bgcolor="#F8E7C8">
+    	<table align="center" border="0" cellpadding="0" cellspacing="0" height="10" width="180" bgcolor="#F8E7C8">
+        <tbody><tr>
+          <td bgcolor="#F8E7C8" width="180" height="10">
+            <p><font face="Arial" size="1">&nbsp;</font></p>
+          </td>
+        </tr>
+      </tbody></table>
+    <table width="160" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+	<td align="center" width="160" bgcolor="#F8E7C8">
+      <!--/* OpenX Javascript Tag v2.8.5 */--> 
+                  <script type="text/javascript">
+<!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://www.purplemath.com/mathads/www/delivery/ajs.php':'http://www.purplemath.com/mathads/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=1");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><script type="text/javascript" src="http://www.purplemath.com/mathads/www/delivery/ajs.php?zoneid=1&cb=5313304183&charset=windows-1252&loc=http%3A//www.purplemath.com/modules/factzero.htm&referer=https%3A//www.google.co.in/"></script><noscript>&lt;a href='http://www.purplemath.com/mathads/www/delivery/ck.php?n=a738a357&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'&gt;&lt;img src='http://www.purplemath.com/mathads/www/delivery/avw.php?zoneid=1&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;amp;n=a738a357' border='0' alt='' /&gt;&lt;/a&gt;</noscript></td>
+              </tr>
+    </tbody></table>
+    <div class="wt_rules"></div>
+      <div class="findButton">FIND YOUR LESSON</div>
+          <div style="width: 180px; border-bottom: 10px solid #F8E7C8;"></div>
+      <div id="navRt">
+        <div id="searchForm">
+          <form id="keywordSearchForm" name="keywordSearchForm" method="post" action="http://www.purplemathplus.com/process/search.php" style="display:inline;">
+            <input name="searchTerms" type="text" id="searchTerms_sidenav" size="16">
+            <input type="submit" name="btnSubmit" id="btnSubmit" value=" Search ">
+          </form>
+        </div>
+        <div class="wt_rules"></div>
+        <div id="textbook_gif"><a href="http://www.mathhelp.com/math-homework-help.php?utm_campaign=purplemath&utm_source=_mh_textbook_search&utm_medium=course"><img src="./Factorials and Trailing Zeroes_files/booksearch.gif" width="48" border="0" align="left">Our lessons<br>matched to<br>your textbook</a></div>
+        <div class="wt_rules"></div>
+        <p>Elementary / Middle /<br>High School Math</p>
+        <a href="http://www.mathhelp.com/5th-grade-math-tutoring.php?utm_campaign=purplemath&utm_source=_mh_grade5&utm_medium=course" title="MathHelp.com - 5th Grade Math">5th Grade Math</a><br>
+        <a href="http://www.mathhelp.com/6th-grade-math-tutoring.php?utm_campaign=purplemath&utm_source=_mh_graded6&utm_medium=course" title="MathHelp.com - 6th Grade Math">6th Grade Math</a><br>
+        <a href="http://www.mathhelp.com/pre-algebra-tutoring.php?utm_campaign=purplemath&utm_source=_mh_palg&utm_medium=course" title="MathHelp.com - Pre-Algebra">Pre-Algebra</a><br>
+        <a href="http://www.mathhelp.com/algebra-1-tutoring.php?utm_campaign=purplemath&utm_source=_mh_alg1&utm_medium=course" title="MathHelp.com - Algebra 1">Algebra 1</a><br>
+        <a href="http://www.mathhelp.com/geometry-tutoring.php?utm_campaign=purplemath&utm_source=_mh_geom&utm_medium=course" title="MathHelp.com - Geometry">Geometry</a><br>
+        <a href="http://www.mathhelp.com/algebra-2-tutoring.php?utm_campaign=purplemath&utm_source=_mh_alg2&utm_medium=course" title="MathHelp.com - Algebra 2">Algebra 2</a><br>
+        <div class="wt_rules"></div>
+        <p>Community College /<br>College Math</p>
+        <a href="http://www.mathhelp.com/college-pre-algebra-tutoring.php?utm_campaign=purplemath&utm_source=_mh_cpa&utm_medium=course" title="MathHelp.com - College Pre-Algebra">College Pre-Algebra</a><br>
+        <a href="http://www.mathhelp.com/introductory-algebra-tutoring.php?utm_campaign=purplemath&utm_source=_mh_cint&utm_medium=course" title="MathHelp.com - Introductory Algebr">Introductory Algebra</a><br>
+        <a href="http://www.mathhelp.com/intermediate-algebra-tutoring.php?utm_campaign=purplemath&utm_source=_mh_cint&utm_medium=course" title="MathHelp.com - Intermediate Algebra">Intermediate Algebra</a><br>
+        <a href="http://www.mathhelp.com/college-algebra-tutoring.php?utm_campaign=purplemath&utm_source=_mh_calg&utm_medium=course" title="MathHelp.com - College Algebra">College Algebra</a><br>
+        <div class="wt_rules"></div>
+        <p>Standardized Test Prep</p>
+        <a href="http://www.mathhelp.com/sat-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_sat&utm_medium=course" title="MathHelp.com - SAT Math">SAT Math</a><br>
+        <a href="http://www.mathhelp.com/act-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_act&utm_medium=course" title="MathHelp.com - ACT Math">ACT Math</a><br>
+        <a href="http://www.mathhelp.com/ged-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_ged&utm_medium=course" title="MathHelp.com - GED Math">GED Math</a><br>
+        <a href="http://www.mathhelp.com/accuplacer-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_accu&utm_medium=course" title="MathHelp.com - ACCUPLACER Math">ACCUPLACER Math</a><br>
+        <a href="http://www.mathhelp.com/compass-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_comp&utm_medium=course" title="MathHelp.com - COMPASS Math">COMPASS Math</a><br>
+        <a href="http://www.mathhelp.com/clep-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_clep&utm_medium=course" title="MathHelp.com - CLEP Math">CLEP Math</a><br>
+        <a href="http://www.mathhelp.com/gre-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_gre&utm_medium=course" title="MathHelp.com - GRE Math">GRE Math</a><br>
+        <a href="http://www.mathhelp.com/gmat-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_gmat&utm_medium=course" title="MathHelp.com - GMAT Math">GMAT Math</a><br>
+        <a href="http://www.mathhelp.com/asvab-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_asvab&utm_medium=course" title="MathHelp.com - ASVAB Math">ASVAB Math</a><br>
+        <a href="http://www.mathhelp.com/praxis-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_prax&utm_medium=course" title="MathHelp.com - PRAXIS Math">PRAXIS Math</a><br>
+        <a href="http://www.mathhelp.com/teas-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_teas&utm_medium=course" title="MathHelp.com - TEAS Math">TEAS Math</a><br>
+        <a href="http://www.mathhelp.com/hesi-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_hesi&utm_medium=course" title="MathHelp.com - HESI Math">HESI Math</a><br>
+        <a href="http://www.mathhelp.com/tabe-math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_tabe&utm_medium=course" title="MathHelp.com - TABE Math">TABE Math</a><br>
+        <br>
+        <a href="http://www.mathhelp.com/math-test-prep.php?utm_campaign=purplemath&utm_source=_mh_more_tests&utm_medium=course" title="MathHelp.com - ">more tests...</a> 
+        <div class="wt_rules"></div>
+        </div>
+        <div style="padding: 0 10px;"><font face="Arial" size="1">This lesson may be printed out for your personal use.</font></div>
+<p align="center"><a href="http://www.copyscape.com/press.php"><img src="./Factorials and Trailing Zeroes_files/csp-88x31.gif" width="88" height="31" border="0" alt="Content copyright protected by Copyscape website plagiarism search"></a></p>
+<div class="wt_rules"></div>
+<div style="padding: 0 10px;">
+    <div align="center">
+      <!--/* OpenX Javascript Tag v2.8.5 */-->
+      <script type="text/javascript">
+<!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://www.purplemath.com/mathads/www/delivery/ajs.php':'http://www.purplemath.com/mathads/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=5");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>-->
+    </script><script type="text/javascript" src="http://www.purplemath.com/mathads/www/delivery/ajs.php?zoneid=5&cb=96872531249&charset=windows-1252&loc=http%3A//www.purplemath.com/modules/factzero.htm&referer=https%3A//www.google.co.in/"></script>
+      <noscript>
+        &lt;a href='http://www.purplemath.com/mathads/www/delivery/ck.php?n=aaaf4f4c&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'&gt;&lt;img src='http://www.purplemath.com/mathads/www/delivery/avw.php?zoneid=5&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;amp;n=aaaf4f4c' border='0' alt='' /&gt;&lt;/a&gt;
+        </noscript>
+    </div>
+    <div id="WyzAntWidget" style="text-align: center; margin-top: 20px;"><style>div#WyzAskWidget{	background-color:#4ba7c0;	-moz-box-shadow:0 0 40px #3e9db9 inset;	-webkit-box-shadow:0 0 40px #3e9db9 inset;	box-shadow:0 0 40px #3e9db9 inset;	-moz-border-radius: 5px;	-webkit-border-radius:5px;	border-radius: 5px;	padding:8px;	border:none;	text-align:center;	font-family:Tahoma, Geneva, Sans-Serif;	color:#fff;	font-zise:14px;	line-height:1em;	max-width:300px;}	#WyzAskWidget #WyzAskWidgetTitle	{		font-size:24px;		color:#fff;		font-family:Tahoma, Geneva, Sans-Serif;		text-align:center;		line-height:27px;		margin:0 auto 5px;		display:block;		width:90%;		max-width:243px;	}	#WyzAskWidget #WyzAskTitle	{		width:98%;		margin:0;	}	#WyzAskWidget a#WyzAskBTN	{		font-size:18px;		padding:13px 36px;	background:#ff9000;    background: -moz-linear-gradient(center top , #fe5d00 0%, #ff9000 99%) repeat scroll 0 0 transparent;    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe5d00), color-stop(99%,#ff9000 ));     border:1px outset #e07e01;   -moz-border-radius: 5px;	-webkit-border-radius:5px;	border-radius: 5px;    border-width: 1px 0;    color: #FFF;    display: inline-block;	text-decoration:none;    font-weight: bold;    margin: 4px auto;	}	#WyzAskWidget a#WyzAskBotLogo	{		display:block;		text-decoration:none;	}	#WyzAskWidget a#WyzAskBotLogo img	{		border:none;		width:90%;	}	#WyzAskWidget a#WyzAskBotLogo img.sectionLogo	{		margin: 25px 10px 8px 0;	}</style><div id="WyzAskWidget"><img id="WyzAskWidgetTitle" src="./Factorials and Trailing Zeroes_files/ask-questions.png" alt="Ask questions and get free answers from professional tutors"><textarea id="WyzAskTitle" name="WyzAskTitle" placeholder="What’s your question?" rows="2"></textarea><a id="WyzAskBTN" href="https://www.wyzant.com/resources/answers/ask?title=" onclick="WyzAskBTN_Clicked()">ASK</a><a id="WyzAskBotLogo" href="http://www.wyzant.com/resources/answers/"><img alt="WyzAnt | Answers" src="./Factorials and Trailing Zeroes_files/wyzant-answers.png"></a></div></div>
+</div>
+    </td>
+  </tr>
+</tbody></table>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="790" bgcolor="white">
+  <tbody><tr>
+    <td bgcolor="#F8E7C8" width="600" align="left">
+      <p><font face="Arial" size="1">&nbsp;&nbsp;Copyright © 2004-2014 &nbsp;<a href="http://www.purplemath.com/resume.htm">Elizabeth 
+      Stapel</a> &nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://www.purplemath.com/about.htm">About</a> 
+      &nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://www.purplemath.com/terms.htm">Terms of Use</a></font><font face="Arial" size="1"> &nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://www.purplemath.com/linking.htm">Linking</a> &nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://www.purplemath.com/license.htm">Site Licensing</a></font></p>
+    </td>
+    <td bgcolor="#F8E7C8" width="10">
+      <p><font face="Arial" size="1">&nbsp;</font></p>
+    </td>
+    <td bgcolor="#F8E7C8" width="180" align="center">
+      <p align="center"><font face="Arial" size="1">&nbsp;<a href="http://www.purplemath.com/feedback.php">Feedback</a> 
+      &nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://www.purplemath.com/modules/errorrpt.php">Error?</a>&nbsp;&nbsp;</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="white" width="600" align="left">
+      <p><font face="Arial" size="1">&nbsp;</font></p>
+    </td>
+    <td bgcolor="white" width="10">
+      <p><font face="Arial" size="1">&nbsp;</font></p>
+    </td>
+    <td bgcolor="white" width="180" align="center">
+      <p><font face="Arial" size="1">&nbsp;</font></p>
+    </td>
+  </tr>
+</tbody></table>
+<center><script type="text/javascript">
+<!--
+google_ad_client = "pub-0863636157410944";
+/* 728x15, created 7/30/09 */
+google_ad_slot = "8246863515";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+  
+  </script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  
+  </script></center><!-- Start Quantcast tag --> <script type="text/javascript">
+_qoptions={
+qacct:"p-639x9ucmDV3hQ"
+};
+</script> <script type="text/javascript" src="./Factorials and Trailing Zeroes_files/quant.js">
+</script> <noscript> &lt;a href="http://www.quantcast.com/p-639x9ucmDV3hQ" target="_blank"&gt;&lt;img src="http://pixel.quantserve.com/pixel/p-639x9ucmDV3hQ.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast" /&gt;&lt;/a&gt; 
+</noscript> <!-- End Quantcast tag --> <!-- Begin comScore Tag --> <script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6034644" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script> <noscript> &lt;img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6034644&amp;cv=2.0&amp;cj=1" /&gt; 
+</noscript> <!-- End comScore Tag --> 
+
+<!-- START HIDE   
+     This page and all contained graphics were created by Elizabeth Stapel.  
+     Elizabeth Stapel retains full ownership rights to this page,  
+     including, but not necessarily limited to,  
+     the text, graphics, scripts, images, buttons, animations, and phrasing.  
+     She also retains all rights to derivative works, whether in English or in other languages,  
+     and to any profits to be derived from this or derivative works.  
+     You are allowed to link to whichever part of this site, unless otherwise specified, that you like,  
+     as long as the ownership and authorship of this site and its contents are still clearly Ms. Stapel's.  
+     This permission to link does not in any way abrograte, nullify, reduce, or otherwise modify  
+     Elizabeth Stapel's rights, as granted under international copyright law.  
+     You may not download this site for presentation as your own material,  
+     nor may you mirror or frame this site or hotlink its content in any manner.  
+     No Purplemath lessons, quizzes, graphics, or scripts may be installed on any server  
+     other than that contracted by Elizabeth Stapel, her heirs, or assigns,  
+     without express prior written permission.  
+     // STOP HIDE -->
+
+
+</body></html>

@@ -1,0 +1,339 @@
+A-E Hash Function	AEHASH	71	19.19
+Super-plane	SUPERPLN	71	15.48
+Lucky Palin	LUCKPAL	71	16.01
+Little Elephant and Magic	LEMAGIC	71	32.58
+Defacing Score	DEFACING	71	9.35
+Chef and Combinatorics	GERALD05	71	37.46
+Some More Homework	A6	72	4.26
+The Guessing Game	A3	72	5.89
+Golf course	F1	72	8.31
+Tri-Hexagonal Puzzle	N4	72	33.33
+Trip	TRIP	72	11.46
+Rendezvous	TR1	72	16.92
+Brush Fire	FIRE	72	22.92
+Obstacle Course	COURSE	72	4.63
+Bogosort	BOGOSORT	72	21.12
+Stepping Up	STEPUP	72	24.83
+Byteknights and Byteknaves	BYTEISLE	72	17.82
+Count Relations	COUNTREL	72	30.77
+Whole submatrix	WINDOW2	72	14.44
+Omax	OMAX	72	21.9
+Rectangles Counting	RECTCNT	72	11.11
+The Great Wall of Byteland	BWALL	72	37.76
+Maximal Score Path	RG_01	72	15.54
+Infinite Grid Game	IGAME	72	33.33
+Robot Movings	MOVES	72	16.81
+Chefs new Pet	HAREJUMP	72	29.25
+Lucky Number	LUCKY2	72	9.04
+Houses and Restaurants	RHOUSE	72	16.58
+Golden Trees	GROWGOLD	72	8.91
+Alien Chefs	DOWNLOAD	72	1.74
+Ciel and Map	CIELMAP	72	25.38
+Delicious Dishes	DDISH	72	10.63
+Traveling Plan	TABUS	72	6.86
+Circle of death	CIRKILL	72	31.79
+Cube Cakes	CUBE	72	19.89
+Number of Paths	NUMPATH	72	18.15
+Trees and Subtrees	TRSUBTR	72	23.25
+Plant Location	K1	73	27.71
+Treasure Hunting	N1	73	20.84
+Prime Pattern	PRIMPATT	73	13.25
+Maximal crosses	MAXCROSS	73	20.74
+Randomly Testing Circuits	CIRCUITS	73	33.21
+Flu Shot Lineup	FLUSHOT	73	19.24
+Central Point	CPOINT	73	15.99
+Snake Snaky	SNAKY	73	13.44
+Makx Sum	KSUBSUM	73	11.95
+Sereja and Graph	SEAGRP	73	23.11
+Healthy dinner party	C4	74	19.09
+A puzzle game	H1	74	22.36
+Nice Quadrangles	NICEQUAD	74	8.33
+Chef Travel Routes	TRAVELER	74	35.59
+Packing the Golden Triangles	PACKBAND	76	16.64
+The Black and White Knights	BWKNIGHT	77	15.15
+A String Game	ASTRGAME	77	9.03
+Need More Diamonds	DIAMOND	77	26.58
+Game	RRGAME	77	19.47
+Chef Teams	CTEAMS	78	21.41
+Nikhils Dungeon	NDUNGEON	79	24.15
+Lucky Driving	LUKYDRIV	79	17.35
+Breaking Into Atoms	ATOMS	81	38.96
+Most Popular Friend	LOKBIL	81	24.24
+Longest Weird Subsequence	LWS	81	43.93
+Sereja and Transformation	SEATRSF	81	26.24
+Socializing Game around Pizza	BIGPIZA	82	32.59
+Level Of Difference	TASTR	82	8.09
+The Rise and Fall of Power	A4	83	4.97
+Little Elephant and Balance	LUCKYBAL	83	38.17
+Tennis Tournament	TOURNAM	86	31.15
+Lowest Sum	LOWSUM	86	9.68
+Younger Brother	CHEFBRO	87	31.75
+Jurassic Park	NI01	87	24.18
+Weight of Numbers	WEIGHT	89	38.13
+Dish Distribution	DISHDIS	89	21.17
+Yet Another Nice Girl	ARRGAME2	89	18.12
+Little Elephant and Order	LUCKY10	90	24.23
+Binary Tournament	BINTOUR	92	32.04
+Little Elephant and Balloons	LEBALONS	93	15.27
+Little Elephant and Mouses	LEMOUSE	94	35.78
+Chef's Dream	DREAM	96	36.72
+Generalized Arithmetic Progression Free Sequence	GENARSEQ	97	22.52
+Mike and Stamps	MIKE3	97	24.03
+Doom Bakes Cakes	CAKEDOOM	98	17.76
+Draughts	DRGHTS	98	16.63
+Equalization	EQUALIZ	102	42.61
+BIT Magazine	TRMAG	103	35.41
+Chef and Codes	CHODE	103	30.39
+Exploding Search	INSOMA2	104	24.53
+Lucky Count	LUCKY1	107	41.28
+Subtraction Game	GAMEAAM	107	28.54
+Divide the Tangerine	TANGDIV	107	27.15
+Little Elephant and Exams	LEEXAMS	109	35.44
+Maxim and Progressions	MAXPR	110	21.05
+Project Spoon	SPOONS	110	30.41
+Chef and Strange Matrix	CHEFBM	113	12.68
+One Dimensional Game of Life	LIFE	115	49.26
+W String	WSTRING	115	17.98
+Free Shuttle Service	SHUTTLE	116	40.37
+Ciel Numbers I	CIELNUM1	118	29.33
+Field Trip	FTRIP	118	24.86
+Little Elephant and T-Shirts	TSHIRTS	119	35.73
+CAO Stage-2	CAOS2	121	24.26
+Random decreasing function	RDF	123	36.95
+Little Elephant and Bamboo	LEBAMBOO	124	25.62
+Colored Array	COLARR	126	28.8
+Yet Another Cute Girl	PRETNUM	127	18.8
+Moving Coins	MVCOIN	128	35.51
+Polo the Penguin and the XOR	PPXOR	128	24.85
+Greatest Dumpling Fight	DUMPLING	129	30.65
+Reign	REIGN	129	35.67
+Counting Matrices	CNPIIM	130	25.8
+Tree Game	TREEGAME	131	30.78
+Forced Output	YNOUTPUT	132	31.25
+Painting Racing Lanes	RACELANE	133	34.94
+Galactik Football	GALACTIK	133	22.7
+End Of The World	CHEFHACK	134	23.07
+Little Elephant and Cards	LECARDS	135	30.38
+ChefTown Parade	CHEFTOWN	136	25.81
+Three is Crowd	CROWD	136	14.88
+Stacking Pancakes	PANSTACK	138	31.05
+Rational Numbers	SNCK04	139	17.01
+Count the squares	D6	140	23.23
+Chef and Reversing	REVERSE	141	23.85
+Forgot Password	FORGETPW	143	24.13
+Little Elephant and Alcohol	LEALCO	146	41.8
+Restaurant Rating	RRATING	147	18.08
+Palindromic Numbers	K2	148	7.46
+Make A Square	MKSQR	149	33.52
+Rank of the Number	NEXTNUM	149	28.25
+The New Scheme	NEWSCH	150	39.11
+Little Elephant and Music	LEMUSIC	151	21.52
+KGP Summers	NI02	153	33.18
+Cleaning Tables	CLETAB	154	23.28
+Rectangular Queries	RECTQUER	156	34.23
+Vote for the Noodle Soup	NDLVOTE	157	25.58
+Count palindromes	COUNTPAL	158	35.89
+Collision in Space	COLLIDE	158	24.57
+The Gray-Similar Code	GRAYSC	166	23.42
+Witua and Math	WITMATH	166	31.36
+Barcelona Gameplay Tactics	FCBARCA	166	33.17
+Save The Princess	SHIRO	168	39.21
+Sums in a cuboid	CUBESUM	171	41.14
+The Leaking Robot	CRAWA	172	25
+Dessert Wizard	DELISH	173	24.61
+Johnny and the Beanstalk	A2	178	30.23
+Chef and Segments	CHMOD	180	16.01
+Cool Guys	COOLGUYS	182	25.57
+Chef and Reunion	LPAIR	182	33.2
+Garden Game	SGARDEN	185	19.99
+Chef and The Divisibility Queries	DIVQUERY	186	29.3
+Sridhar Likes Travelling	TOURMAP	187	25.95
+Magic Trick	MTRICK	190	23.84
+Chef Goes Through Segments	GERALD03	193	38
+Make Him Happy	TWODOGS	195	24.31
+Bon Appetit	FGFS	197	22.98
+Little Elephant and Subarrays	SUBMIN	197	45.93
+Book Exercises	BEX	199	14.67
+Chef and Digits	ADIGIT	200	19.49
+Sum of pairs	PAIRSUM	201	15
+Ciel and Tomya	CIELTOMY	201	32.74
+Predictopus	PREDICT	203	43.86
+Subtraction Game 2	AMSGAME2	203	32.08
+Home Delivery	HDELIVER	204	29.94
+Kingdom Unity	KINGCON	205	26.02
+Guessing Game	GUESS	206	36.15
+Event Organizer	MAXCOMP	207	40.05
+Gravel	SPREAD	214	19.14
+Remember the recipe	TWSTR	214	33.54
+Tree Product	TPRODUCT	215	17.08
+Digit Rotation	DIGROT	217	18.74
+Chef and Integers	INTEG	220	18.02
+Chef and Digit Jumps	DIGJUMP	220	20.33
+My Fair Coins	CSUMD	221	32.77
+Levy Conjecture	LEVY	222	29.55
+Ciel and New Menu	CIEL8STR	228	19.08
+A New Number System	ACMKANPD	231	25.43
+CAO Stage-1	CAOS1	232	41.38
+Range of Data	DRANGE	234	14.86
+Chef and Frogs	FROGV	237	23.09
+Reach The Point	RETPO	237	32.37
+Climbing Stairs	CLMBSTRS	238	32.78
+Superpowers of 2	SPOTWO	239	37.74
+Lyra and the Alethiometer	ALETHIO	239	23.13
+Chef of the Year	CVOTE	248	38.9
+A Plus B Again!	TAAPLUSB	248	44.86
+Team Split	TMSLT	248	21.54
+Dish Owner	DISHOWN	254	25.86
+Chef and Subarray	CHEFZOT	259	44.28
+Permutation Shuffle	PERMSUFF	260	26.47
+Chef and Walking on the rectangle	CHRECT	261	41.96
+Product of divisors	D1	262	6.84
+Word Couting	WCOUNT	277	22.09
+Matchsticks	MSTICK	278	19.36
+Funny Marbles	MARBLEGF	280	26.19
+Chef and the Cake I	CAKE1AM	282	38.43
+Little Elephant and Lemonade	LELEMON	285	48.46
+Maxim and Dividers	MAANDI	299	40.39
+Misinterpretation	MISINTER	303	51.06
+Distribute idlis Equally	EQIDLIS	304	28.21
+Pizza Delivery	DBOY	305	31.96
+Fierce Battles	DRGNBOOL	308	52.01
+Polo the Penguin and the Numbers	PPNUM	308	23.57
+Shortest Path in Binary Trees	BINTREE	313	54.43
+Count K-Primes	KPRIME	314	24.34
+Kisses & Hugs	CKISSHUG	315	29.16
+Missing some chairs	MCHAIRS	317	33.15
+Garden Squares	GARDENSQ	321	45.56
+Chef team	CHEFTEAM	322	15.27
+Square Digit Squares	SDSQUARE	323	25.63
+Palindrome	TAPALIN	325	32.94
+Magic Rankings	MGCRNK	328	29.84
+A Prime Conjecture	PRIMES2	330	26.83
+Longest Common Pattern	LCPESY	330	33.46
+Painting	PNTNG	341	32.03
+The Probability Of Winning	PROB	344	58.89
+Count Substrings	CSUB	349	30.8
+Ciel Numbers II	CIELNUM2	352	19.45
+Delivery Boy	HOMDEL	352	42.71
+Compilers and parsers	COMPILER	368	32.7
+Am I a Fibonacci Number	AMIFIB	369	22.06
+Polo the Penguin and the Test	PPTEST	370	42.49
+Little Chef and Numbers	PROSUM	374	24.28
+Chef and Gift	PRGIFT	390	23.94
+Hello Hello	HELLO	391	34.21
+Money Transformation	MONTRANS	401	29.11
+Andrew and the Meatballs again	AMMEAT2	403	44.92
+Chef and Kingship	KINGSHIP	404	43.68
+Paying up	A1	406	44.58
+Stone	RRSTONE	407	22.29
+Helping Lira	HELPLIRA	413	30.23
+Strange Matrix	RRMATRIX	418	34.22
+Many Chefs	MANYCHEF	422	38.17
+Counting Flags	FLAGS	428	45.29
+Walk	WALK	431	40.32
+Fire Escape Routes	FIRESC	435	33.03
+Subanagrams	SUBANAGR	438	44.11
+Three Different Numbers	THREEDIF	441	31
+Granama Recipes	GRANAMA	444	30.59
+Chef and Girlfriend	GERALD04	446	35.41
+The White Knight	E1	454	23.59
+Farmer Feb	POTATOES	457	48.85
+Gift Rift	SAD	462	36.66
+Name Reduction	NAME1	470	39.31
+Poker	POKER	481	29.87
+Pairing Chefs	PAIRING	482	55.07
+Last Digit Sum	LASTDIG	484	15.42
+Resistance	RESIST	492	49.4
+Daily Train	DAILY	503	46.59
+Sum Queries	RRSUM	524	37.49
+Approximately	APPROX	536	51.54
+Please like me	PLZLYKME	537	28.83
+Internet Media Types	MIME2	539	34.23
+Minimum Distance	CIELDIST	552	35.99
+Lack of Logic	NOLOGIC	561	36.05
+Chef-jumping	OJUMPS	564	41.1
+Spoon in Matrix	SPOON	565	39.26
+Code	RRCODE	572	22.35
+Andrew and the Meatballs	AMMEAT	592	30.58
+Copy-Paste	RRCOPY	613	46.8
+Little Elephant and Divisors	LEDIV	634	21.45
+Reversing directions	DIRECTI	668	47.87
+A Simple Equation	EQUATION	682	23
+The Minimum Number Of Moves	SALARY	684	43.36
+Arranging the Appetizers	ARRANGE	696	50.21
+Row and Column Operations	ROWCOLOP	699	40.29
+Chopsticks	TACHSTCK	705	39.94
+Magic Pairs	ALEXNUMB	710	31.36
+Dividing Stamps	DIVIDING	716	46.16
+Correctness of Knight Move	KNIGHTMV	725	24.6
+Fit to Play	PLAYFIT	731	33.15
+Divide the Cake	ANUDTC	756	51.68
+Attic Crossing	ATTIC	769	51.17
+The Morning Commute	COMMUTE	799	52.82
+Lucky Long	LUCKY5	810	46.82
+Chef and Feedback	ERROR	812	40.65
+Code Crazy Minions	NOCODING	857	55.63
+Splitting Candies	SPCANDY	871	29.78
+Your Name is Mine	NAME2	873	31.73
+Little Elephant and Strings	LUCKYSTR	882	52.61
+Tourist Translations	TOTR	887	54.53
+The Ball And Cups	TAVISUAL	896	46.47
+Ups and Downs	ANUUND	902	55.76
+Maximum Weight Difference	MAXDIFF	925	32.04
+Recipe Reconstruction	RRECIPE	948	36.31
+Popular Rice Recipe	TIDRICE	1040	50.22
+Chef and The Right Triangles	RIGHTRI	1073	53.62
+Not a Triangle	NOTATRI	1081	23.34
+Little Elephant and Bombs	LEBOMBS	1111	34.74
+Arranging Cup-cakes	RESQ	1135	46.23
+The Way to a Friends House Is Never Too Long	POINTS	1152	23.77
+Subtraction Game 1	AMSGAME1	1160	45.01
+Johnny and the Beanstalk	MARCHA2	1200	27.58
+Snape and Ladder	SNAPE	1229	60.16
+Uncle Johny	JOHNY	1262	56.51
+Chef and Remissness	REMISS	1326	57.1
+Top Batsmen	BESTBATS	1328	43.99
+Open the Dragon Scroll	DRAGNXOR	1338	58
+Lapindromes	LAPIN	1344	51.94
+Jewels and Stones	STONES	1383	41.97
+Lucky lucky number	CHEFLUCK	1474	44.9
+Little Elephant and Permutations	LEPERMUT	1482	59.47
+Buying Sweets	BUYING2	1513	49.12
+Hotel Bytelandia	HOTEL	1552	51.15
+Number Game Revisited	NUMGAME2	1559	53.68
+Decreasing String	DECSTR	1590	32.84
+Coin Flip	CONFLIP	1658	53.89
+The Best Box	J7	1741	59.38
+GCD2	GCD2	1763	25.46
+Carvans	CARVANS	1767	45.61
+Discrepancies in the Voters List	VOTERS	1787	27.55
+Racing Horses	HORSES	1812	45.25
+Three Way Communications	COMM3	1890	51.62
+Permutation Cycles	PCYCLE	1933	41.81
+Buy1-Get1	BUY1GET1	2016	42.22
+Little Elephant and Candies	LECANDY	2409	55.09
+Birthday Candles	CANDLE	2488	23.73
+Nuclear Reactors	NUKES	2920	29.25
+Cutting Recipes	RECIPE	2992	48.74
+Cleaning Up	CLEANUP	3012	49.03
+A Very Easy Problem!	EASYPROB	3136	52.84
+Count of Maximum	MAXCOUNT	3179	38.23
+Ciel and Receipt	CIELRCPT	3211	60.96
+Paying up	MARCHA1	3358	35.33
+Ciel and A-B Problem	CIELAB	3420	48.96
+Packaging Cupcakes	MUFFINS3	3625	58.29
+Prime Palindromes	PRPALIN	3663	27.94
+Cooling Pies	COOLING	4316	42.64
+Double Strings	DOUBLE	4572	60.39
+Yet Another Number Game	NUMGAME	4674	46.61
+Ambiguous Permutations	PERMUT2	4979	42.05
+Transform the Expression	ONP	4991	44.68
+The Lead Game	TLG	5668	24.07
+Sums in a Triangle	SUMTRIAN	5693	35.01
+Turbo Sort	TSORT	7538	22.93
+Holes in the text	HOLES	10459	39.66
+Small factorials	FCTRL2	10927	22.3
+Factorial	FCTRL	15994	34.38
+Enormous Input Test	INTEST	18622	37.12
+ATMSolved	HS08TEST	27184	23.36
+Life, the Universe, and EverythingSolved	TEST	38549	32.1

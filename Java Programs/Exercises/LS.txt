@@ -1,0 +1,19 @@
+void ls()
+{
+	int i,n,se,flag=0;
+	printf("Enter array size: ");
+	scanf("%d",&n);
+	int a[n];
+	printf("\nEnter the elements: ");
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	printf("\nEnter the search element: ");
+	scanf("%d",&se);
+	for(i=0;i<n;i++)
+	if(a[i]==se)
+	flag=1;
+	if(flag==1)
+	printf("\nElement found");
+	else
+	printf("\nElement not found");
+}

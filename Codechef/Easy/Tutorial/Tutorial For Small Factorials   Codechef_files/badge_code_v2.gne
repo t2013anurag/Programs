@@ -1,0 +1,27 @@
+var b_txt = '';
+
+// write the badge
+	
+	
+		 	 		
+	b_txt+= '<td align="center" valign="center" style="padding:0" class="flickr_badge_image" id="flickr_badge_image1"><a href="http://www.flickr.com/photos/directi/4265688760/"><img src="http://farm5.staticflickr.com/4010/4265688760_88b6d3b15b_s.jpg" alt="A photo on Flickr" title="CodeChef SnackDown Finals31" height="75" width="75"></a></td>';
+	
+		 	 		
+	b_txt+= '<td align="center" valign="center" style="padding:0" class="flickr_badge_image" id="flickr_badge_image2"><a href="http://www.flickr.com/photos/directi/4786143715/"><img src="http://farm5.staticflickr.com/4101/4786143715_cf8f98d352_s.jpg" alt="A photo on Flickr" title="MAXCROSS" height="75" width="75"></a></td>';
+	
+		 	 		
+	b_txt+= '<td align="center" valign="center" style="padding:0" class="flickr_badge_image" id="flickr_badge_image3"><a href="http://www.flickr.com/photos/directi/4265676012/"><img src="http://farm3.staticflickr.com/2641/4265676012_6867cef439_s.jpg" alt="A photo on Flickr" title="CodeChef SnackDown Finals20" height="75" width="75"></a></td>';
+	
+		 	 		
+	b_txt+= '<td align="center" valign="center" style="padding:0" class="flickr_badge_image" id="flickr_badge_image4"><a href="http://www.flickr.com/photos/directi/4264915623/"><img src="http://farm5.staticflickr.com/4043/4264915623_5943c86b53_s.jpg" alt="A photo on Flickr" title="CodeChef SnackDown Finals11" height="75" width="75"></a></td>';
+	
+		 	 		
+	b_txt+= '<td align="center" valign="center" style="padding:0" class="flickr_badge_image" id="flickr_badge_image5"><a href="http://www.flickr.com/photos/directi/4264928873/"><img src="http://farm5.staticflickr.com/4001/4264928873_d3c145856c_s.jpg" alt="A photo on Flickr" title="CodeChef SnackDown Finals23" height="75" width="75"></a></td>';
+	
+		 	 		
+	b_txt+= '<td align="center" valign="center" style="padding:0" class="flickr_badge_image" id="flickr_badge_image6"><a href="http://www.flickr.com/photos/directi/4265683964/"><img src="http://farm5.staticflickr.com/4023/4265683964_396869409f_s.jpg" alt="A photo on Flickr" title="CodeChef SnackDown Finals27" height="75" width="75"></a></td>';
+
+
+b_txt += '<span style="position:absolute;left:-999em;top:-999em;visibility:hidden" class="flickr_badge_beacon"><img src="http://geo.yahoo.com/p?s=792600102&t=f26225debc9abca1aa4493e4d5f7ac40&fl_ev=0&lang=en&intl=in" width="0" height="0" alt="" /></span>';
+
+document.write(b_txt);

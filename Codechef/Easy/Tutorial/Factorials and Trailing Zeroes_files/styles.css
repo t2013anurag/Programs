@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* CSS Document */
+/* banner styles */
+#mathhelp_callout_homepage {
+	margin-top:10px;
+	display:block;	
+}
+
+#mathhelp_message {
+	text-align:left;
+	color:#24007b;
+	font-weight:bold;
+	padding:0px 0px 10px 30px;
+	font-family:Arial;
+	line-height:1.3em;
+}
+
+#purplemath_message {
+	text-align:left;
+	color:purple;
+	font-weight:bold;
+	padding:13px 0px 10px 0px;
+	font-family:Arial;
+	line-height:1.3em;
+}
+
+#pm_pmplus_header {
+	display:inline;
+}
+
+#purplemathLessonHeader {
+	width:285px;
+}
+
+#mathhelp_lesson_callout {
+	float:right;
+	width:315px;
+	text-align:right;
+	display:inline;
+}
+
+#mathhelp_lesson_callout .header_graphic {
+	margin-bottom:5px;
+}
+
+#mathhelp_lesson_callout img {
+	border:0px;
+}
+
+#mathhelp_lesson {
+	margin-bottom:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+#mathhelp_lesson .imageBlock {
+	height:200px;
+}
+
+#mathhelp_lesson .textBlock {
+	height:30px;
+}
+
+#mathhelp_lesson .notice {
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	margin-left:20px;
+	padding-bottom:20px;
+	border-bottom: 1px solid purple;
+}
+
+#mathhelp_lesson .freeLessonNotice {
+	text-align:center;
+	width:273px;
+	margin-left:30px;
+	padding:6px;
+	background-color:#24007b;
+	color:white;
+	font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight:strong;
+	font-size:14px;
+}
+
+#mathhelp_lesson .genericNotice {
+	text-align:center;
+	width:273px;
+	margin-left:30px;
+	padding:6px;
+	background-color:#24007b;
+	color:white;
+	font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight:strong;
+	font-size:14px;
+}
+
+#mathhelp_lesson .noFreeLessonNotice {
+	display: none;
+}
+
+#mathhelp_lesson .genericNotice a {
+	color:white;
+}

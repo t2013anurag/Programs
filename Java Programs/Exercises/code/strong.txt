@@ -1,0 +1,31 @@
+
+#include<stdio.h>
+#include<conio.h> 
+int main()
+{
+ int num,i,f,r,sum=0,num1;
+ clrscr();
+ printf("Enter a number: ");
+ scanf("%d",&num);
+ 
+ num1=num;
+ while(num){
+  i=1,f=1;
+  r=num%10;
+ 
+  while(i<=r){
+   f=f*i;
+   i++;
+  }
+  sum=sum+f;
+  num=num/10;
+ 
+ }
+ if(sum==num1)
+  printf("%d is a strong number",num1);
+ else
+  printf("%d is not a strong number",num1);
+ getch();
+ return 0;
+ 
+}

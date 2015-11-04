@@ -1,0 +1,557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0066)http://blog.codechef.com/2009/07/02/tutorial-for-small-factorials/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<link href="http://blog.codechef.com/wp-content/themes/simpla/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+<title>Tutorial For Small Factorials | Codechef</title>
+
+<meta name="generator" content="Bluefish 2.0.0"> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="./Tutorial For Small Factorials   Codechef_files/style.css" type="text/css" media="screen">
+<link rel="alternate" type="application/rss+xml" title="Codechef RSS Feed" href="http://blog.codechef.com/feed/">
+<link rel="pingback" href="http://blog.codechef.com/xmlrpc.php">
+<style type="text/css">
+	@import url(http://blog.codechef.com/wp-content/themes/simpla/codechef-header.css);
+</style>
+<link rel="alternate" type="application/rss+xml" title="Codechef » Tutorial For Small Factorials Comments Feed" href="http://blog.codechef.com/2009/07/02/tutorial-for-small-factorials/feed/">
+<link rel="stylesheet" id="A2A_SHARE_SAVE-css" href="./Tutorial For Small Factorials   Codechef_files/addtoany.min.css" type="text/css" media="all">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.codechef.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.codechef.com/wp-includes/wlwmanifest.xml"> 
+<link rel="index" title="Codechef" href="http://blog.codechef.com/">
+<link rel="start" title="Practice Problems Added" href="http://blog.codechef.com/2009/01/22/practice-problems-added/">
+<link rel="prev" title="Programmer of the Month for July ’09: Keshav Dhandhania" href="http://blog.codechef.com/2009/06/30/programmer-of-the-month-for-july-09-keshav-dhandhania/">
+<link rel="next" title="CodeChef Meetups Kick-off in Mumbai" href="http://blog.codechef.com/2009/07/08/codechef-meetups-kick-off-in-mumbai/">
+<meta name="generator" content="WordPress 3.0.1">
+<link rel="shortlink" href="http://blog.codechef.com/?p=296">
+<!--[if IE]>
+<style type="text/css">
+ul.addtoany_list a img{filter:alpha(opacity=70)}
+ul.addtoany_list a:hover img,ul.addtoany_list a.addtoany_share_save img{filter:alpha(opacity=100)}
+</style>
+<![endif]-->
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[410,487] -->
+<link rel="canonical" href="./Tutorial For Small Factorials   Codechef_files/Tutorial For Small Factorials   Codechef.htm">
+<!-- /all in one seo pack -->
+<link rel="stylesheet" href="./Tutorial For Small Factorials   Codechef_files/disqus.css" type="text/css" media="screen">	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<script type="text/javascript" async="" src="./Tutorial For Small Factorials   Codechef_files/atrk.js"></script><script type="text/javascript" src="./Tutorial For Small Factorials   Codechef_files/jquery.js"></script><style type="text/css"></style>
+<!--[if IE]>
+	<style type="text/css">
+		@import url(http://blog.codechef.com/wp-content/themes/simpla/ddsmoothmenu-ie.css);
+	</style>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="./Tutorial For Small Factorials   Codechef_files/ddsmoothmenu.css">
+
+<!--[if lte IE 7]>
+<style type="text/css">
+html .ddsmoothmenu{height: 1%;} /*Holly Hack for IE7 and below*/
+</style>
+<![endif]-->
+
+<script type="text/javascript" src="./Tutorial For Small Factorials   Codechef_files/ddsmoothmenu.js"></script>
+<style type="text/css">.a2a_menu, .a2a_menu * { -moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;float:none;margin:0;padding:0;height:auto;width:auto;}.a2a_menu { border-radius: 6px;display:none;direction:ltr;background:#FFF;font: 14px Arial,Helvetica,sans-serif;color:#000;line-height:12px;border: 1px solid #CCC;vertical-align:baseline;overflow:hidden;}.a2a_mini {min-width:200px;position:absolute;width: 300px;z-index:9999997;}.a2a_overlay {display: none;background: #CCC; _height: expression( ((e=document.documentElement.clientHeight)?e:document.body.clientHeight)+"px" ); _width: expression( ((e=document.documentElement.clientWidth)?e:document.body.clientWidth)+"px" ); filter: alpha(opacity=50); opacity: .7;position: fixed;_position: absolute; top: 0;right: 0;left: 0;bottom: 0;z-index: 9999998;-webkit-animation: a2aFadeInOverlay .14s ease-out;animation: a2aFadeInOverlay .14s ease-out;}.a2a_full {background: #FFF;height: auto;height: calc(320px);top: 15%;_top: expression(40+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+"px"); left: 50%;margin-left: -320px; position: fixed;_position: absolute; text-align: center;width: 640px;z-index: 9999999; -webkit-animation: a2aFadeIn .14s ease-in;    animation: a2aFadeIn .14s ease-in;}.a2a_full_header,.a2a_full_services,.a2a_full_footer {border: 0;margin: 0;padding: 12px;box-sizing: border-box;}.a2a_full_header {padding-bottom: 8px;}.a2a_full_services {height: 280px; overflow-y: scroll;padding: 0 12px;-webkit-overflow-scrolling: touch;}.a2a_full_services .a2a_i {display: inline-block;float: none;width: 181px;width: calc(33.334% - 18px);}div.a2a_full_footer {font-size: 9px;text-align: center;padding: 6px 12px;}div.a2a_full_footer a,div.a2a_full_footer a:visited {display: inline;font-size: 9px;padding: 6px 12px; }div.a2a_full_footer a:hover {background: none;border: 0;color: #0166FF;}div.a2a_full_footer a span.a2a_i_a2a_sm {display: inline-block;padding-left: 14px;vertical-align: bottom;}@-webkit-keyframes a2aFadeIn {from { opacity: 0; }  to { opacity: 1; }}@keyframes a2aFadeIn {from { opacity: 0; }  to { opacity: 1; }}@-webkit-keyframes a2aFadeInOverlay {from { opacity: 0; }  to { opacity: .7; }}@keyframes a2aFadeInOverlay {from { opacity: 0; }  to { opacity: .7; }}@media (max-width: 639px) {.a2a_full {top: 15%;left: 0;margin-left: auto;width: 100%;}}@media (min-width: 318px) and (max-width: 437px) {.a2a_full .a2a_full_services .a2a_i {width: calc(50% - 18px);}}@media (max-width: 317px) {.a2a_full .a2a_full_services .a2a_i {width: calc(100% - 18px);}}@media (max-height: 436px) {.a2a_full {bottom: 40px;height: auto;top: 40px;}}.a2a_menu a{color:#0166FF;text-decoration:none;font:14px Arial,Helvetica,sans-serif;line-height:14px;height:auto;width:auto;outline:none;-moz-outline:none;}.a2a_menu a:visited{color:#0166FF}.a2a_menu a:hover,.a2a_menu a:active,.a2a_menu a.a2a_i:focus,.a2a_tabs div:hover{color:#2A2A2A;border:1px solid #EEE;background-color:#EEE;text-decoration:none}.a2a_menu span,.a2a_img{background:url(http://static.addtoany.com/menu/icons.28.png) no-repeat;border:0;display:block;line-height:16px}.a2a_menu span.a2a_i_find { height:16px;left: 8px;position:absolute;top: 7px;width:16px;}.a2a_menu span.a2a_i_find svg {background-color: #FFF;}.a2a_menu span.a2a_i_find svg path {fill: #CCC;}#a2a_menu_container{display:inline-block} #a2a_menu_container{_display:inline} .a2a_menu_title_container {padding: 6px 8px;}.a2a_menu_find_container {border: 1px solid #CCC;border-radius: 6px;padding: 2px 24px 2px 0;position: relative;text-align: left;}.a2a_cols_container{border-bottom-right-radius:8px;border-top-right-radius:8px}.a2a_cols_container .a2a_col1{overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch}.a2a_menu input, .a2a_menu input[type="text"]{display:block;background-image:none;box-shadow:none;line-height:100%;margin:0;overflow:hidden;padding:0;-moz-box-shadow:none;-webkit-box-shadow:none;-webkit-appearance:none} .a2a_menu_title_container input.a2a_menu_title {background-color: #FFF;border: 0;color: #2A2A2A;font: inherit;margin: 0;padding: 0;width: 99%;}.a2a_menu_find_container input.a2a_menu_find {background-color: transparent;_background-color: #FFF;border: 0;color: #2A2A2A;font-size: 16px;height: 20px;line-height: 20px;left: 28px;outline: 0;padding: 2px 0;position: relative;width: 99%;}.a2a_clear{clear:both} .a2a_img, .a2a_svg { display:block; overflow:hidden; }.a2a_img{height:16px;line-height:16px;width:16px;}.a2a_svg{height:32px;line-height:32px;width:32px;}.a2a_default_style a{float:left;line-height:16px;padding:0 2px}.a2a_default_style a:hover .a2a_img,.a2a_default_style a:hover .a2a_svg,.a2a_floating_style a:hover .a2a_img,.a2a_floating_style a:hover .a2a_svg { opacity: .7;}.a2a_default_style .a2a_svg, .a2a_floating_style .a2a_svg { border-radius:14% ;} .a2a_default_style .a2a_img, .a2a_default_style .a2a_dd, .a2a_default_style .a2a_svg{float:left}.a2a_default_style .a2a_img_text{margin-right:4px}.a2a_default_style .a2a_divider{border-left:1px solid #000;display:inline;float:left;height:16px;line-height:16px;margin:0 5px}.a2a_kit a{cursor:pointer}.a2a_floating_style { background-color: #fff; border-radius: 6px; padding: 4px; position: fixed; z-index: 9999995; }.a2a_vertical_style a { display: block; padding: 4px; }.a2a_floating_style.a2a_default_style { bottom: 0; }.a2a_floating_style.a2a_default_style a { padding: 4px; }.a2a_nowrap{white-space:nowrap}.a2a_note{margin:0 auto;padding:9px;font-size:12px;text-align:center}.a2a_note .a2a_note_note{margin:0;color:#2A2A2A}.a2a_wide a{display:block;margin-top:3px;border:1px solid #EEE;padding:3px;text-align:center}.a2a_tabs{float:left;margin:0 0 3px} .a2a_tabs a,.a2a_tabs div{margin:1px;background-color:#EEE; border:1px solid #EEE; font-size:11px; padding:6px 12px ; white-space:nowrap} .a2a_tabs a span, .a2a_tabs div span{display:inline-block;padding-left:20px;height:auto;width:auto} .a2a_tabs_default a span, .a2a_tabs_default div span{height:auto;max-width:99px;overflow:hidden;padding-left:20px;width:auto;_width:expression(this.clientWidth > 99? "97px" : "auto");}.a2a_tabs a, .a2a_tabs a:visited, .a2a_tabs a:hover, .a2a_tabs div, .a2a_tabs div:hover{cursor:pointer;border-bottom:1px solid #EEE;color:#2A2A2A;border-bottom-left-radius:0;-webkit-border-bottom-left-radius:0;-moz-border-radius-bottomleft:0;border-bottom-right-radius:0;-webkit-border-bottom-right-radius:0;-moz-border-radius-bottomright:0}a.a2a_tab_selected, a.a2a_tab_selected:visited,a.a2a_tab_selected:hover,a.a2a_tab_selected:active,a.a2a_tab_selected:focus, div.a2a_tab_selected,div.a2a_tab_selected:hover{color:#0166FF;background-color:#FFF;border:1px solid #CCC;border-bottom:1px solid #FFF}a.a2a_i,i.a2a_i{display:block;float:left;border:1px solid #FFF;padding:6px 8px;text-align:left;white-space:nowrap;width:132px;}a.a2a_i span, a.a2a_more span {overflow: hidden;padding: 0 0 0 21px;text-overflow: ellipsis;}a.a2a_sss:hover {border-left: 1px solid #CCC;}a.a2a_menu_show_more_less{border-bottom:1px solid #FFF;border-left:0;border-right:0;margin:6px 0 0;padding:6px}a.a2a_menu_show_more_less span{display:inline-block;height:16px;margin:0 auto;vertical-align:bottom;} iframe.a2a_shim {background-color: transparent;border: 0;bottom: 0;filter: alpha(opacity=0); height: 100%;left: 0;right: 0;top: 0;position: absolute;width: 100%;z-index: 9999996;_height: expression( ((e=document.documentElement.clientHeight)?e:document.body.clientHeight)+"px" ); _width: expression( ((e=document.documentElement.clientWidth)?e:document.body.clientWidth)+"px" ); }.a2a_dd img {border:0;-ms-touch-action:manipulation;}.a2a_i_a2a{background-position:0 0!important}.a2a_i_a2a_sm{background-position:0 -17px!important}.a2a_i_agregator{background-position:0 -34px!important}.a2a_i_aim{background-position:0 -51px!important}.a2a_i_allvoices{background-position:0 -68px!important}.a2a_i_amazon{background-position:0 -85px!important}.a2a_i_aol{background-position:0 -102px!important}.a2a_i_app_net{background-position:0 -119px!important}.a2a_i_arto{background-position:0 -136px!important}.a2a_i_baidu{background-position:0 -153px!important}.a2a_i_bebo{background-position:0 -170px!important}.a2a_i_bibsonomy{background-position:0 -187px!important}.a2a_i_bitty{background-position:0 -204px!important}.a2a_i_blinklist{background-position:0 -221px!important}.a2a_i_blogger{background-position:0 -238px!important}.a2a_i_bloglines{background-position:0 -255px!important}.a2a_i_blogmarks{background-position:0 -272px!important}.a2a_i_bloomberg_current{background-position:0 -289px!important}.a2a_i_bookmark{background-position:0 -306px!important}.a2a_i_bookmarks_fr{background-position:0 -323px!important}.a2a_i_box{background-position:0 -340px!important}.a2a_i_buddymarks{background-position:0 -357px!important}.a2a_i_buffer{background-position:0 -374px!important}.a2a_i_care2{background-position:0 -391px!important}.a2a_i_chrome{background-position:0 -408px!important}.a2a_i_citeulike{background-position:0 -425px!important}.a2a_i_dailyrotation{background-position:0 -442px!important}.a2a_i_default{background-position:0 -459px!important}.a2a_i_delicious{background-position:0 -476px!important}.a2a_i_designfloat{background-position:0 -493px!important}.a2a_i_diaspora{background-position:0 -510px!important}.a2a_i_digg{background-position:0 -527px!important}.a2a_i_diigo{background-position:0 -544px!important}.a2a_i_dzone{background-position:0 -561px!important}.a2a_i_email{background-position:0 -578px!important}.a2a_i_evernote{background-position:0 -595px!important}.a2a_i_facebook{background-position:0 -612px!important}.a2a_i_fark{background-position:0 -629px!important}.a2a_i_feed{background-position:0 -646px!important}.a2a_i_feedblitz{background-position:0 -663px!important}.a2a_i_feedbucket{background-position:0 -680px!important}.a2a_i_feedly{background-position:0 -697px!important}.a2a_i_feedmailer{background-position:0 -714px!important}.a2a_i_find{background-position:0 -731px!important}.a2a_i_fireant{background-position:0 -748px!important}.a2a_i_firefox{background-position:0 -765px!important}.a2a_i_flipboard{background-position:0 -782px!important}.a2a_i_folkd{background-position:0 -799px!important}.a2a_i_friendfeed{background-position:0 -816px!important}.a2a_i_funp{background-position:0 -833px!important}.a2a_i_gmail{background-position:0 -850px!important}.a2a_i_google{background-position:0 -867px!important}.a2a_i_google_plus{background-position:0 -884px!important}.a2a_i_hatena{background-position:0 -901px!important}.a2a_i_instapaper{background-position:0 -918px!important}.a2a_i_itunes{background-position:0 -935px!important}.a2a_i_jamespot{background-position:0 -952px!important}.a2a_i_jumptags{background-position:0 -969px!important}.a2a_i_khabbr{background-position:0 -986px!important}.a2a_i_kindle{background-position:0 -1003px!important}.a2a_i_klipfolio{background-position:0 -1020px!important}.a2a_i_line{background-position:0 -1037px!important}.a2a_i_linkagogo{background-position:0 -1054px!important}.a2a_i_linkatopia{background-position:0 -1071px!important}.a2a_i_linkedin{background-position:0 -1088px!important}.a2a_i_livejournal{background-position:0 -1105px!important}.a2a_i_mail_ru{background-position:0 -1122px!important}.a2a_i_mendeley{background-position:0 -1139px!important}.a2a_i_meneame{background-position:0 -1156px!important}.a2a_i_miro{background-position:0 -1173px!important}.a2a_i_mixi{background-position:0 -1190px!important}.a2a_i_my_msn{background-position:0 -1207px!important}.a2a_i_myspace{background-position:0 -1224px!important}.a2a_i_netlog{background-position:0 -1241px!important}.a2a_i_netvibes{background-position:0 -1258px!important}.a2a_i_netvouz{background-position:0 -1275px!important}.a2a_i_newsalloy{background-position:0 -1292px!important}.a2a_i_newsisfree{background-position:0 -1309px!important}.a2a_i_newstrust{background-position:0 -1326px!important}.a2a_i_newsvine{background-position:0 -1343px!important}.a2a_i_nowpublic{background-position:0 -1360px!important}.a2a_i_odnoklassniki{background-position:0 -1377px!important}.a2a_i_oknotizie{background-position:0 -1394px!important}.a2a_i_oldreader{background-position:0 -1411px!important}.a2a_i_orkut{background-position:0 -1428px!important}.a2a_i_outlook{background-position:0 -1445px!important}.a2a_i_outlook_com{background-position:0 -1462px!important}.a2a_i_pdf{background-position:0 -1479px!important}.a2a_i_phonefavs{background-position:0 -1496px!important}.a2a_i_pinboard{background-position:0 -1513px!important}.a2a_i_pinterest{background-position:0 -1530px!important}.a2a_i_plurk{background-position:0 -1547px!important}.a2a_i_pocket{background-position:0 -1564px!important}.a2a_i_podnova{background-position:0 -1581px!important}.a2a_i_print{background-position:0 -1598px!important}.a2a_i_printfriendly{background-position:0 -1615px!important}.a2a_i_protopage{background-position:0 -1632px!important}.a2a_i_pusha{background-position:0 -1649px!important}.a2a_i_rapidfeeds{background-position:0 -1666px!important}.a2a_i_reddit{background-position:0 -1683px!important}.a2a_i_rediff{background-position:0 -1700px!important}.a2a_i_segnalo{background-position:0 -1717px!important}.a2a_i_share{background-position:0 -1734px!important}.a2a_i_sina_weibo{background-position:0 -1751px!important}.a2a_i_sitejot{background-position:0 -1768px!important}.a2a_i_slashdot{background-position:0 -1785px!important}.a2a_i_springpad{background-position:0 -1802px!important}.a2a_i_startaid{background-position:0 -1819px!important}.a2a_i_stumbleupon{background-position:0 -1836px!important}.a2a_i_stumpedia{background-position:0 -1853px!important}.a2a_i_symbaloo{background-position:0 -1870px!important}.a2a_i_technotizie{background-position:0 -1887px!important}.a2a_i_thefreedictionary{background-position:0 -1904px!important}.a2a_i_thefreelibrary{background-position:0 -1921px!important}.a2a_i_tuenti{background-position:0 -1938px!important}.a2a_i_tumblr{background-position:0 -1955px!important}.a2a_i_twiddla{background-position:0 -1972px!important}.a2a_i_twitter{background-position:0 -1989px!important}.a2a_i_typepad{background-position:0 -2006px!important}.a2a_i_viadeo{background-position:0 -2023px!important}.a2a_i_vk{background-position:0 -2040px!important}.a2a_i_wanelo{background-position:0 -2057px!important}.a2a_i_webnews{background-position:0 -2074px!important}.a2a_i_whatsapp{background-position:0 -2091px!important}.a2a_i_winksite{background-position:0 -2108px!important}.a2a_i_wists{background-position:0 -2125px!important}.a2a_i_wordpress{background-position:0 -2142px!important}.a2a_i_xerpi{background-position:0 -2159px!important}.a2a_i_xing{background-position:0 -2176px!important}.a2a_i_y18{background-position:0 -2193px!important}.a2a_i_yahoo{background-position:0 -2210px!important}.a2a_i_yim{background-position:0 -2227px!important}.a2a_i_yoolink{background-position:0 -2244px!important}.a2a_i_youmob{background-position:0 -2261px!important}</style><script type="text/javascript" async="" src="./Tutorial For Small Factorials   Codechef_files/embed.js"></script><script src="./Tutorial For Small Factorials   Codechef_files/alfie.f51946af45e0b561c60f768335c9eb79.js" async="" charset="UTF-8"></script><script src="./Tutorial For Small Factorials   Codechef_files/saved_resource" async="" charset="UTF-8"></script></head>
+<body>
+
+<!-- HEADER -->
+<div id="cc-header" class="cc-wrapper">
+<div style="display:none;">
+	<img src="./Tutorial For Small Factorials   Codechef_files/nav-awrrow-ahover.gif">
+	<img src="./Tutorial For Small Factorials   Codechef_files/arrow-down-small.gif">
+</div>
+	<div class="cc-inner-wrapper">
+
+		<!-- LOGO -->
+		<div id="cc-site-logo" class="cc-cols-2">
+			<strong><a href="http://blog.codechef.com/">CodeChef</a></strong>
+		</div>
+		<!-- /LOGO -->
+
+		<!-- COLS 2 -->
+		<div class="cc-cols-2" style="position: static;">
+
+			<!-- PRIMARY NAV -->
+			<div id="smoothmenu1" class="ddsmoothmenu">
+				<ul>
+					<li class="bignav" id="practice-nav" style="z-index: 100;"> 
+						<a href="http://www.codechef.com/problems/easy/" style="padding-left: 25px;">PRACTICE<img src="./Tutorial For Small Factorials   Codechef_files/nav-awrrow-a.gif" class="mainnavarrow" style="border:0;"></a>
+						<ul style="display: none; top: 30px; visibility: visible;">
+						  <li><a href="http://www.codechef.com/problems/easy/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Easy</a></li>
+						  <li><a href="http://www.codechef.com/problems/medium/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Medium</a></li>
+						  <li><a href="http://www.codechef.com/problems/hard/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Hard</a></li>
+                                                  <li><a href="http://www.codechef.com/problems/challenge/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Challenge</a></li>
+						  <li><a href="http://www.codechef.com/problems/extcontest/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Peer</a></li>
+						</ul>
+					</li>
+					<li class="bignav" id="compete-nav" style="z-index: 99;">
+						<a href="http://www.codechef.com/contests/" style="padding-left: 25px;">COMPETE<img src="./Tutorial For Small Factorials   Codechef_files/nav-awrrow-a.gif" class="mainnavarrow" style="border:0;"></a>
+					    <ul style="display: none; top: 30px; visibility: visible;">
+					      <!--<li class="mainsubnav"><span>Present Contests</span></li>-->
+					      <!--<li><a href="javascript:void(0)">None</a></li>-->
+						  <!--<li class="mainsubnav"><span>Future Contests</span></li>-->
+						  <!--<li><a href="http://www.codechef.com/JAN10/">January Algorithm Challenge</a></li>
+						  <li><a href="http://www.codechef.com/DEC09/">December Algorithm Challenge</a></li>
+						  <li><a href="http://www.codechef.com/RESNKDWN/">Campus ReSnackdown</a></li>
+						  <li><a href="http://www.codechef.com/SNACKDWN/">Campus Snackdown</a></li>-->
+						  <!--<li><a href="http://www.codechef.com/NOV09/">November Algorithm Challenge</a></li>
+						  <li><a href="http://www.codechef.com/OCT09/">October Algorithm Challenge</a></li>-->
+						  <!--<li><a href="http://www.codechef.com/SEP09/">September Algorithm Challenge</a></li>
+						  <li><a href="http://www.codechef.com/AUGMINI/">August Mini Challenge</a></li>
+						  <li><a href="http://www.codechef.com/AUG09/">August Algorithm Challenge</a></li>-->
+						  <!--<li><a href="http://www.codechef.com/JULY09/">July Algorithm Challenge</a></li>-->
+						  <!--<li><a href="http://www.codechef.com/JUNE09/">June Algorithm Challenge</a></li>
+						  <li><a href="http://www.codechef.com/MAYGAMER/">May Gamers Challenge</a></li>-->
+						  <!--<li><a href="http://www.codechef.com/MAY09/">May CodeChef Challenge</a></li>-->
+						  <!--<li><a href="http://www.codechef.com/APRIL09/">April CodeChef Challenge</a></li>-->
+					  	  <!--<li><a href="http://www.codechef.com/INSOM1/">Insomnia Speed Round</a></li>
+					  	  <li><a href="http://www.codechef.com/INSOM2/">Insomnia Thought Round</a></li>-->
+						  <!--<li class="mainsubnav"><span>Past Contests</span></li>-->
+						  <!--<li><a href="http://www.codechef.com/MARCH09/">March CodeChef Challenge</a></li>-->
+						</ul>
+					 </li>
+					 <li class="bignav" id="discuss-nav" style="z-index: 98;">
+						<a href="http://discuss.codechef.com/" style="padding-left: 25px;">DISCUSS<img src="./Tutorial For Small Factorials   Codechef_files/nav-awrrow-a.gif" class="mainnavarrow" style="border:0;"></a>
+					    <ul style="display: none; top: 30px; visibility: visible;">
+						  <li><a href="http://www.codechef.com/wiki"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Wiki</a></li>
+						  <li><a href="http://discuss.codechef.com/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Forums</a></li>
+						  <li><a href="http://blog.codechef.com/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Blog</a></li>
+						  <li><a href="http://www.twitter.com/codechef"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Twitter</a></li>
+						</ul>
+					 </li> 
+					 <li class="smallnav" id="community-nav" style="border-left-width: 1px; border-left-style: solid; border-left-color: rgb(153, 153, 153); z-index: 97;">
+						<a href="http://www.codechef.com/community/" style="padding-left: 25px;">COMMUNITY<img src="./Tutorial For Small Factorials   Codechef_files/arrow-right-small.gif" class="mainnavarrow" style="border:0;"></a>
+						<ul style="top: 28px; visibility: visible; left: 0px; width: 172px; display: none;">
+						  <li><a href="http://www.codechef.com/meetups/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">CodeChef Meetups</a></li>
+						  <li><a href="http://www.codechef.com/campus_chapter/about/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Campus Chapters</a></li>
+						  <li><a href="http://www.codechef.com/hostyourcontest/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Host Your Contest</a></li>
+						  <li><a href="http://www.codechef.com/usergroups/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">User Groups</a></li>
+						  <li><a href="http://www.codechef.com/techtalks/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">CodeChef TechTalks</a></li>
+						  <!---<li><a href="http://www.codechef.com/bloggers/">Bloggers</a></li>--->
+						</ul>
+					</li>
+					<li class="smallnav" id="help-nav" style="z-index: 96;">
+						<a href="http://www.codechef.com/help/" style="padding-left: 25px;">HELP<img src="./Tutorial For Small Factorials   Codechef_files/arrow-right-small.gif" class="mainnavarrow" style="border:0;"></a>
+						<ul style="display: none; top: 28px; visibility: visible;">
+						  <li><a href="http://www.codechef.com/wiki/faq"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Frequently Asked Questions</a></li>
+						  <li><a href="http://www.codechef.com/wiki/faq-problem-setters"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">FAQ for Problem Setters</a></li>
+						  <li><a href="http://www.codechef.com/ranklist/AX/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Ranks</a></li>
+						  <li><a href="http://www.codechef.com/wiki/tutorials"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Tutorials</a></li>
+						  <!--<li><a href="http://blog.codechef.com/2009/07/09/tutorial-for-problem-paying-up/">Tutorial: Paying Up</a></li>
+						  <li><a href="http://blog.codechef.com/2009/07/02/tutorial-for-small-factorials/">Tutorial: Small Factorials</a></li>
+						  <li><a href="http://blog.codechef.com/2009/02/24/54/">Tutorial: Input and Output(I/O)</a></li>
+						  <li><a href="http://blog.codechef.com/2009/02/25/codechef-tutorial-your-first-non-trivial-problem/">Tutorial: Your First Non-Trivial Problem</a></li>
+						  <li><a href="http://blog.codechef.com/2009/08/17/tutorial-for-problem-product-of-divisors/">Tutorial:Product of Divisors</a></li>
+						  <li><a href="http://blog.codechef.com/2009/08/27/tutorial-for-problem-quadratic-equations/">Tutorial:Quadratic Equations</a></li>-->
+						</ul>
+					</li>
+					<li class="smallnav" id="about-nav" style="z-index: 95;">
+						<a href="http://www.codechef.com/aboutus/" style="padding-left: 25px;">ABOUT<img src="./Tutorial For Small Factorials   Codechef_files/arrow-right-small.gif" class="mainnavarrow" style="border:0;"></a>
+						<ul style="display: none; top: 28px; visibility: visible;">
+						  <li><a href="http://www.codechef.com/aboutus/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">About CodeChef</a></li>
+						  <li><a href="http://www.codechef.com/team/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Team CodeChef</a></li>
+						  <li><a href="http://www.codechef.com/press/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">Press Room</a></li>
+						  <li><a href="http://www.codechef.com/ceoscorner/"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">CEO's Corner</a></li>
+						  <li><a href="http://www.directi.com/" target="_blank"><img src="./Tutorial For Small Factorials   Codechef_files/menu-bullet.gif" class="menubullets" style="border:0;">About Directi</a></li>				  
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- /PRIMARY NAV -->
+		</div>
+		<!-- /COLS 2 -->
+
+		<script type="text/javascript">
+			//Initialize Menu instance(s):
+			
+			ddsmoothmenu.init({
+				mainmenuid: "smoothmenu1", //menu DIV id
+				//customtheme: ["#1c5a80", "#18374a"], //override default menu CSS background values? Uncomment: ["normal_background", "hover_background"]
+				contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+			})
+		</script>
+		
+	</div>
+</div> 
+<!-- /HEADER -->
+
+<!-- CONTENT REGIONS -->
+<div id="cc-content-regions" class="cc-wrapper">
+	<div class="cc-inner-wrapper cc-rounded-cr-body">
+		<div class="cc-rounded-cr-header">
+		<div class="cc-rounded-cr-footer">
+<!-- <div id="content"> -->
+
+			<!-- PRIMARY CONTENT -->
+			<div id="cc-primary-content" class="cc-cols-2">
+				<div class="cc-content-spacer">
+				<img src="./Tutorial For Small Factorials   Codechef_files/content-wrapper-bg.gif" class="cc-content-wrapper-header">
+				<div class="cc-content-wrapper">
+
+																								<div class="entry entry-1">
+					<div class="entrytitle">
+						<h2><a href="./Tutorial For Small Factorials   Codechef_files/Tutorial For Small Factorials   Codechef.htm" rel="bookmark" title="Permanent Link to Tutorial For Small Factorials">Tutorial For Small Factorials</a></h2> 
+					</div>
+					<div class="postinfo">
+						<span class="postedby">Posted by <strong>Aniruddha</strong> on July 2nd, 2009</span>
+						<span class="filedto">Filed in <u><a href="http://blog.codechef.com/category/problems/" title="View all posts in Problems" rel="category tag">Problems</a>, <a href="http://blog.codechef.com/category/tutorials/" title="View all posts in Tutorials" rel="category tag">Tutorials</a></u> </span>
+						<a href="http://blog.codechef.com/2009/07/02/tutorial-for-small-factorials/#comments" class="commentslink" title="Comment on Tutorial For Small Factorials"><span class="dsq-postid" rel="296 http://blog.codechef.com/?p=296">View Comments</span></a>					</div>
+					<div class="entrybody">
+						<p>Hello all !</p>
+<p>The problem that we will be taking up is <a title="FCTRL2" href="http://www.codechef.com/problems/FCTRL2/" target="_blank">http://www.codechef.com/problems/FCTRL2/</a> <img src="./Tutorial For Small Factorials   Codechef_files/icon_smile.gif" alt=":)" class="wp-smiley"><br>
+This problem basically asks you to calculate the factorial of a number up to 100. Now, I guess most of you know what a “factorial” is. For those who don’t, the factorial of a number N is 1*2*…*N. This problem would be very simple, had it not been for the maximum value of N. The structure of the problem is such that it asks the user to take the number of test cases as the first input. Then ‘t’ integers follow where ‘t’ is the number of test cases which was given as input previously.</p>
+<p>For every integer here, we have to calculate the factorial. This is very simple in languages like python or java which have built-in support for big integer types. It proves to be a hassle for people using C / C++ or languages that do not have a built-in biginteger type. Let’s think about how we can store the the result.</p>
+<p>Now, the maximum number that we can store in an unsigned 32 bit integer is 2 ^ 32 – 1 and in an unsigned 64 bit integer is 2 ^ 64 – 1. Something like 100!(‘!’ is the notation<br>
+for factorial) has over 150 decimal digits. The data types mentioned earlier can store numbers having at most 9 and 19 decimal digits respectively. So, we need to find a way to store the 150+ digits that we will get as the answer. The simplest data structure that we can use is an integer array of size of about 200 to be on the safe side.</p>
+<p>In the simplest form, let us store one decimal digit per array index. So, if the number is say 120, then the array will have the numbers as follows:</p>
+<p>Say <em>a</em>[200] is how we declare the array, then<br>
+<em>a</em>[0] = 0<br>
+<em>a</em>[1] = 2<br>
+<em>a</em>[2] = 1</p>
+<p>The least significant digit is stored in the lowest index 0. The next one in index 1 and so on. Along with the array, we need an integer specifying the total number of digits in the array at the given moment. Let this number be ‘<em>m</em>‘. Initially, <em>a</em>[0] will be 1 and the value of ‘<em>m</em>‘ will be 1 specifying that we have just one digit in the array.</p>
+<p>Let’s take a simple example first. Consider that the array has some value like 45 and we need to multiply it with a value 37. This can be done in the following way.<br>
+<strong>The array will be:</strong><br>
+<em>a</em>[0] = 5<br>
+<em>a</em>[1] = 4<br>
+and the value of <em>m</em> will be 2 specifying that there are 2 digits in the array currently.</p>
+<p>Now, to multiply this array with the value 37. We start off from the index 0 of the array to index 1. At every iteration, we calculate 37 * <em>a</em>[index]. We also maintain a temporary variable called <em>temp</em> which is initialized to 0. Now, at every step, we calculate <em>x = a[index] * 37 + temp</em>. The new value of <em>a</em>[index] will be <em>x</em> % 10 and the new value of <em>temp</em> will be <em>temp / 10</em>. We are simply carrying out multiplication the way it is carried out usually. So, for the current situation, the iterations will be something like this.</p>
+<p>Initialize <em>temp</em> = 0<br>
+<strong>Iteration 1 : </strong><br>
+array = <strong>(5, 4)</strong><br>
+temp = 0<br>
+index = 0, a[index] = 5<br>
+x = a[index] * 37 + temp = 5 * 37 + 0 = 185.<br>
+the new value of a[index] = 185 % 10 which is 5 and the new value of temp is 185 / 10 which is 18</p>
+<p><strong>Iteration 2 :</strong><br>
+array : <strong>(5, 4)</strong><br>
+temp = 18<br>
+index = 1, a[index] = 4<br>
+x = a[index] * 37 + temp = 4 * 37 + 18 = 166.<br>
+the new value of a[index] = 166 % 10 which is 6 and the new value of temp is 166 / 10 which is 16</p>
+<p>We have finished 2 iterations and this is the value of ‘<em>m</em>‘, the array size at the moment. The required number of iterations is now over, but the value of <em>temp</em> is still greater than 0. This means that the current value of <em>temp</em> is to be incorporated into the array. For that, we keep appending the last digit of <em>temp</em> to the array and divide <em>temp</em> by 10 till <em>temp</em> becomes 0. So, we will get something like<br>
+<strong>Iteration 1 : </strong><br>
+temp = 16 , array = <strong>(5, 6)</strong><br>
+So, we add 16 % 10 to the array so that the array becomes<strong> (5, 6, 6)</strong> and we divide temp by 10 so that temp becomes 1. We update the value of ‘m’ to m + 1 that is m = 3<br>
+<strong>Iteration 2 :</strong><br>
+temp = 1, array = <strong>(5, 6, 6)</strong><br>
+Now, we add 1 % 10 to the array so the array becomes <strong>(5, 6, 6, 1)</strong> and we divide temp by 10 so that temp becomes 0. We update the value of ‘m’ to m + 1 that is m = 4</p>
+<p>The value of <em>temp</em> is now 0 and our multiplication is now over. The final array we get is <strong>(5, 6, 6, 1)</strong></p>
+<p>Voila, we have the answer to 45 * 37 in our array with the Least significant digit in the 0th position. <img src="./Tutorial For Small Factorials   Codechef_files/icon_smile.gif" alt=":)" class="wp-smiley"> </p>
+<p>For finding the factorial, we need to carry out this exact multiplication operation at every step as we loop from 1 to N. At the end of the Nth iteration, our array will contain<br>
+the answer and the value of m will be the number of digits in the answer. We can then just print the array from the Most significant digit to the least for the answer.</p>
+<p>The basic flow of the program will be as below :</p>
+<pre>Start</pre>
+<pre>Take in the number of test cases</pre>
+<pre>While there is a test case remaining to be handled</pre>
+<pre>&nbsp; &nbsp; Take in the number whose factorial is to be found, let it be N</pre>
+<pre>&nbsp; &nbsp; Initialize the array's 0th index to 1 and m to 1</pre>
+<pre>&nbsp; &nbsp; Initialize i to 1</pre>
+<pre>&nbsp; &nbsp; While i is less than or equal to N</pre>
+<pre>&nbsp; &nbsp; &nbsp; &nbsp;	Carry out multiplication of the array with 'i' as shown above.</pre>
+<pre>&nbsp; &nbsp; Print the contents of the array starting from the most significant digit and ending with the least significant digit.</pre>
+<pre>Stop</pre>
+<p>Certain improvements can be made to the above mentioned method. We are storing only one digit per array index, We can store more than 1 digit per index so that the number of computations are reduced. The method to do that is the same as above. We leave it to the reader as an exercise <img src="./Tutorial For Small Factorials   Codechef_files/icon_smile.gif" alt=":)" class="wp-smiley"> </p>
+<div id="flaresmith" class="feedflare"><script src="./Tutorial For Small Factorials   Codechef_files/codechef" type="text/javascript" charset="utf-8"></script><script src="http://feeds.feedburner.com/~s/Codechef?i=http%3A//blog.codechef.com/2009/07/02/tutorial-for-small-factorials/&showad=true" type="text/javascript"></script></div><div class="addtoany_share_save_container"><ul class="addtoany_list"><li><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save#url=http%3A%2F%2Fblog.codechef.com%2F2009%2F07%2F02%2Ftutorial-for-small-factorials%2F&title=Tutorial%20For%20Small%20Factorials&description="><img src="./Tutorial For Small Factorials   Codechef_files/share_save_171_16.png" width="171" height="16" alt="Share/Bookmark"></a></li></ul>
+<script type="text/javascript"><!--
+var a2a_config = a2a_config || {};
+a2a_config.linkname="Tutorial For Small Factorials";
+a2a_config.linkurl="http://blog.codechef.com/2009/07/02/tutorial-for-small-factorials/";
+//--></script><script type="text/javascript" src="./Tutorial For Small Factorials   Codechef_files/page.js"></script>
+
+</div>					</div>
+					
+		
+				</div>
+				<div class="commentsblock">
+					
+<div id="disqus_thread"><iframe id="dsq-2" data-disqus-uid="2" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Tutorial For Small Factorials   Codechef_files/saved_resource.htm" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 4991px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe><iframe id="dsq-indicator-north" data-disqus-uid="indicator-north" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 542px !important; border: none !important; overflow: hidden !important; top: 0px !important; min-width: 542px !important; max-width: 542px !important; position: fixed !important; z-index: 2147483646 !important; height: 29px !important; min-height: 29px !important; max-height: 29px !important; display: none !important;"></iframe><iframe id="dsq-indicator-south" data-disqus-uid="indicator-south" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 542px !important; border: none !important; overflow: hidden !important; bottom: 0px !important; min-width: 542px !important; max-width: 542px !important; position: fixed !important; z-index: 2147483646 !important; height: 29px !important; min-height: 29px !important; max-height: 29px !important; display: none !important;"></iframe></div>
+
+
+
+<script type="text/javascript">
+	var disqus_url = 'http://blog.codechef.com/2009/07/02/tutorial-for-small-factorials/ ';
+	var disqus_identifier = '296 http://blog.codechef.com/?p=296';
+	var disqus_container_id = 'disqus_thread';
+	var disqus_domain = 'disqus.com';
+	var disqus_shortname = 'blogcodechef';
+	var disqus_title = "Tutorial For Small Factorials";
+		var disqus_config = function () {
+	    var config = this; // Access to the config object
+
+	    /* 
+	       All currently supported events:
+	        * preData — fires just before we request for initial data
+	        * preInit - fires after we get initial data but before we load any dependencies
+	        * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+	        * afterRender - fires when template is rendered but before we show it
+	        * onReady - everything is done
+	     */
+
+		config.callbacks.preData.push(function() {
+			// clear out the container (its filled for SEO/legacy purposes)
+			document.getElementById(disqus_container_id).innerHTML = '';
+		});
+				config.callbacks.onReady.push(function() {
+			// sync comments in the background so we don't block the page
+			DISQUS.request.get('?cf_action=sync_comments&post_id=296');
+		});
+			};
+	var facebookXdReceiverPath = 'http://blog.codechef.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+</script>
+
+<script type="text/javascript">
+	var DsqLocal = {
+		'trackbacks': [
+		],
+		'trackback_url': "http:\/\/blog.codechef.com\/2009\/07\/02\/tutorial-for-small-factorials\/trackback\/"	};
+</script>
+
+<script type="text/javascript">
+(function() {
+	var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+	dsq.async = true;
+	dsq.src = 'http://' + disqus_shortname + '.' + disqus_domain + '/embed.js?pname=wordpress&pver=2.48';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+				</div>
+									<div class="navigation">
+						<div class="alignleft"></div>
+						<div class="alignright"></div>
+					</div>
+					
+				
+
+</div></div></div>
+<!-- /PRIMARY CONTENT -->
+
+<!-- CONTENT SIDEBAR -->
+<div id="cc-sidebar-content" class="cc-cols-2">
+	<div class="cc-content-spacer">
+		<div class="cc-block cc-rounded-block">
+			<div class="cc-rounded-b-header">
+				<div class="cc-rounded-b-footer">
+					<br>
+					<form role="search" method="get" id="searchform" action="http://blog.codechef.com/">
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s">
+	<input type="submit" id="searchsubmit" value="Search">
+	</div>
+	</form>				<h2>Recent Posts</h2>		<ul>
+				<li><a href="http://blog.codechef.com/2014/09/04/three-perfect-scores-in-one-contest/" title="Three perfect scores in one contest">Three perfect scores in one contest</a></li>
+				<li><a href="http://blog.codechef.com/2014/08/29/chinese-delhian-flavors-rule-the-anniversary-lunchtime/" title="Chinese &amp; Delhian Flavors Rule The Anniversary LunchTime">Chinese &amp; Delhian Flavors Rule The Anniversary LunchTime</a></li>
+				<li><a href="http://blog.codechef.com/2014/08/16/nitk-codechef-campus-chapter-we-learn-together/" title="NITK CodeChef Campus Chapter – We learn together">NITK CodeChef Campus Chapter – We learn together</a></li>
+				<li><a href="http://blog.codechef.com/2014/08/09/a-tad-chaotic-cook-off/" title="A Tad Chaotic Cook-off">A Tad Chaotic Cook-off</a></li>
+				<li><a href="http://blog.codechef.com/2014/07/31/4771/" title="The big fat June Challenge 2014">The big fat June Challenge 2014</a></li>
+				</ul>
+		<h2>Categories</h2>		<ul>
+	<li class="cat-item cat-item-3"><a href="http://blog.codechef.com/category/about/" title="View all posts filed under About">About</a> (9)
+</li>
+	<li class="cat-item cat-item-22"><a href="http://blog.codechef.com/category/acmicpc/" title="View all posts filed under ACM ICPC">ACM ICPC</a> (10)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://blog.codechef.com/category/announcement/" title="View all posts filed under Announcement">Announcement</a> (166)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://blog.codechef.com/category/campus-chapters/" title="View all posts filed under Campus Chapters">Campus Chapters</a> (7)
+</li>
+	<li class="cat-item cat-item-23"><a href="http://blog.codechef.com/category/college-contests/" title="View all posts filed under College Contests">College Contests</a> (9)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://blog.codechef.com/category/contests/" title="View all posts filed under Contests">Contests</a> (163)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://blog.codechef.com/category/events/" title="View all posts filed under Events">Events</a> (24)
+</li>
+	<li class="cat-item cat-item-18"><a href="http://blog.codechef.com/category/faq/" title="View all posts filed under FAQ">FAQ</a> (1)
+</li>
+	<li class="cat-item cat-item-8"><a href="http://blog.codechef.com/category/features/" title="View all posts filed under Features">Features</a> (35)
+</li>
+	<li class="cat-item cat-item-25"><a href="http://blog.codechef.com/category/languages/" title="View all posts filed under Languages">Languages</a> (1)
+</li>
+	<li class="cat-item cat-item-9"><a href="http://blog.codechef.com/category/meetup/" title="View all posts filed under Meetup">Meetup</a> (4)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://blog.codechef.com/category/open-source/" title="View all posts filed under Open Source">Open Source</a> (1)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://blog.codechef.com/category/practice-problems/" title="View all posts filed under Practice Problems">Practice Problems</a> (7)
+</li>
+	<li class="cat-item cat-item-12"><a href="http://blog.codechef.com/category/prizes/" title="View all posts filed under Prizes">Prizes</a> (16)
+</li>
+	<li class="cat-item cat-item-24"><a href="http://blog.codechef.com/category/problems/" title="View all posts filed under Problems">Problems</a> (5)
+</li>
+	<li class="cat-item cat-item-13"><a href="http://blog.codechef.com/category/programmer-of-the-month/" title="View all posts filed under Programmer of the Month">Programmer of the Month</a> (27)
+</li>
+	<li class="cat-item cat-item-125"><a href="http://blog.codechef.com/category/schools/" title="CodeChef For Schools">Schools</a> (7)
+</li>
+	<li class="cat-item cat-item-14"><a href="http://blog.codechef.com/category/tech-talks/" title="View all posts filed under Tech Talks">Tech Talks</a> (7)
+</li>
+	<li class="cat-item cat-item-15"><a href="http://blog.codechef.com/category/tutorials/" title="View all posts filed under Tutorials">Tutorials</a> (17)
+</li>
+	<li class="cat-item cat-item-126"><a href="http://blog.codechef.com/category/volunteers/" title="CodeChef Volunteers">Volunteers</a> (2)
+</li>
+	<li class="cat-item cat-item-17"><a href="http://blog.codechef.com/category/winners/" title="View all posts filed under Winners">Winners</a> (80)
+</li>
+		</ul>
+<h2>Recent Comments</h2><ul id="recentcomments"><li class="recentcomments">teejay on <a href="http://blog.codechef.com/2009/02/24/54/#comment-5685">CodeChef Tutorial: Input and Output (I/O)</a></li><li class="recentcomments">Sukhvir on <a href="http://blog.codechef.com/2013/02/08/is-your-institution-on-codechef/#comment-5683">Is Your Institution on CodeChef?</a></li><li class="recentcomments">Sukhvir on <a href="http://blog.codechef.com/2013/02/08/is-your-institution-on-codechef/#comment-5682">Is Your Institution on CodeChef?</a></li><li class="recentcomments">Teju on <a href="http://blog.codechef.com/2014/08/16/nitk-codechef-campus-chapter-we-learn-together/#comment-5681">NITK CodeChef Campus Chapter – We learn together</a></li><li class="recentcomments">hmm on <a href="http://blog.codechef.com/2009/07/02/tutorial-for-small-factorials/#comment-5680">Tutorial For Small Factorials</a></li></ul><h2>Recent Pictures</h2>			<div class="textwidget"><!-- Start of Flickr Badge -->
+<div id="flickr_outer_box">
+<script type="text/javascript" src="./Tutorial For Small Factorials   Codechef_files/badge_code_v2.gne">
+</script><a href="http://www.flickr.com/photos/directi/4786143715/"><img src="./Tutorial For Small Factorials   Codechef_files/4786143715_cf8f98d352_s.jpg" alt="A photo on Flickr" title="MAXCROSS" height="75" width="75"></a><a href="http://www.flickr.com/photos/directi/4264909349/"><img src="./Tutorial For Small Factorials   Codechef_files/4264909349_956ecc422a_s.jpg" alt="A photo on Flickr" title="CodeChef SnackDown Finals03" height="75" width="75"></a><a href="http://www.flickr.com/photos/directi/4265662322/"><img src="./Tutorial For Small Factorials   Codechef_files/4265662322_1df3bbcf91_s.jpg" alt="A photo on Flickr" title="CodeChef SnackDown Finals06" height="75" width="75"></a><a href="http://www.flickr.com/photos/directi/9616323420/"><img src="./Tutorial For Small Factorials   Codechef_files/9616323420_e7ee37171d_s.jpg" alt="A photo on Flickr" title="DSC00183" height="75" width="75"></a><a href="http://www.flickr.com/photos/directi/7837566030/"><img src="./Tutorial For Small Factorials   Codechef_files/7837566030_0856b2bfa5_s.jpg" alt="A photo on Flickr" title="100_8363" height="75" width="75"></a><a href="http://www.flickr.com/photos/directi/4264920553/"><img src="./Tutorial For Small Factorials   Codechef_files/4264920553_ac2401e230_s.jpg" alt="A photo on Flickr" title="CodeChef SnackDown Finals16" height="75" width="75"></a><span style="position:absolute;left:-999em;top:-999em;visibility:hidden" class="flickr_badge_beacon"><img src="./Tutorial For Small Factorials   Codechef_files/p" width="0" height="0" alt=""></span>
+</div>
+<!-- End of Flickr Badge --></div>
+		<h2>Blogroll</h2>
+	<ul class="xoxo blogroll">
+<li><a href="http://codex.wordpress.org/">Documentation</a></li>
+<li><a href="http://wordpress.org/extend/plugins/">Plugins</a></li>
+<li><a href="http://wordpress.org/extend/ideas/">Suggest Ideas</a></li>
+<li><a href="http://wordpress.org/support/">Support Forum</a></li>
+<li><a href="http://wordpress.org/extend/themes/">Themes</a></li>
+<li><a href="http://wordpress.org/news/">WordPress Blog</a></li>
+<li><a href="http://planet.wordpress.org/">WordPress Planet</a></li>
+
+	</ul>
+
+<h2>Archives</h2>		<ul>
+			<li><a href="http://blog.codechef.com/2014/09/" title="September 2014">September 2014</a></li>
+	<li><a href="http://blog.codechef.com/2014/08/" title="August 2014">August 2014</a></li>
+	<li><a href="http://blog.codechef.com/2014/07/" title="July 2014">July 2014</a></li>
+	<li><a href="http://blog.codechef.com/2014/06/" title="June 2014">June 2014</a></li>
+	<li><a href="http://blog.codechef.com/2014/05/" title="May 2014">May 2014</a></li>
+	<li><a href="http://blog.codechef.com/2014/04/" title="April 2014">April 2014</a></li>
+	<li><a href="http://blog.codechef.com/2014/03/" title="March 2014">March 2014</a></li>
+	<li><a href="http://blog.codechef.com/2014/01/" title="January 2014">January 2014</a></li>
+	<li><a href="http://blog.codechef.com/2013/12/" title="December 2013">December 2013</a></li>
+	<li><a href="http://blog.codechef.com/2013/11/" title="November 2013">November 2013</a></li>
+	<li><a href="http://blog.codechef.com/2013/10/" title="October 2013">October 2013</a></li>
+	<li><a href="http://blog.codechef.com/2013/09/" title="September 2013">September 2013</a></li>
+	<li><a href="http://blog.codechef.com/2013/08/" title="August 2013">August 2013</a></li>
+	<li><a href="http://blog.codechef.com/2013/07/" title="July 2013">July 2013</a></li>
+	<li><a href="http://blog.codechef.com/2013/06/" title="June 2013">June 2013</a></li>
+	<li><a href="http://blog.codechef.com/2013/05/" title="May 2013">May 2013</a></li>
+	<li><a href="http://blog.codechef.com/2013/04/" title="April 2013">April 2013</a></li>
+	<li><a href="http://blog.codechef.com/2013/03/" title="March 2013">March 2013</a></li>
+	<li><a href="http://blog.codechef.com/2013/02/" title="February 2013">February 2013</a></li>
+	<li><a href="http://blog.codechef.com/2013/01/" title="January 2013">January 2013</a></li>
+	<li><a href="http://blog.codechef.com/2012/12/" title="December 2012">December 2012</a></li>
+	<li><a href="http://blog.codechef.com/2012/10/" title="October 2012">October 2012</a></li>
+	<li><a href="http://blog.codechef.com/2012/09/" title="September 2012">September 2012</a></li>
+	<li><a href="http://blog.codechef.com/2012/08/" title="August 2012">August 2012</a></li>
+	<li><a href="http://blog.codechef.com/2012/07/" title="July 2012">July 2012</a></li>
+	<li><a href="http://blog.codechef.com/2012/06/" title="June 2012">June 2012</a></li>
+	<li><a href="http://blog.codechef.com/2012/05/" title="May 2012">May 2012</a></li>
+	<li><a href="http://blog.codechef.com/2012/04/" title="April 2012">April 2012</a></li>
+	<li><a href="http://blog.codechef.com/2012/03/" title="March 2012">March 2012</a></li>
+	<li><a href="http://blog.codechef.com/2012/02/" title="February 2012">February 2012</a></li>
+	<li><a href="http://blog.codechef.com/2012/01/" title="January 2012">January 2012</a></li>
+	<li><a href="http://blog.codechef.com/2011/12/" title="December 2011">December 2011</a></li>
+	<li><a href="http://blog.codechef.com/2011/11/" title="November 2011">November 2011</a></li>
+	<li><a href="http://blog.codechef.com/2011/10/" title="October 2011">October 2011</a></li>
+	<li><a href="http://blog.codechef.com/2011/09/" title="September 2011">September 2011</a></li>
+	<li><a href="http://blog.codechef.com/2011/08/" title="August 2011">August 2011</a></li>
+	<li><a href="http://blog.codechef.com/2011/07/" title="July 2011">July 2011</a></li>
+	<li><a href="http://blog.codechef.com/2011/06/" title="June 2011">June 2011</a></li>
+	<li><a href="http://blog.codechef.com/2011/05/" title="May 2011">May 2011</a></li>
+	<li><a href="http://blog.codechef.com/2011/04/" title="April 2011">April 2011</a></li>
+	<li><a href="http://blog.codechef.com/2011/03/" title="March 2011">March 2011</a></li>
+	<li><a href="http://blog.codechef.com/2011/02/" title="February 2011">February 2011</a></li>
+	<li><a href="http://blog.codechef.com/2011/01/" title="January 2011">January 2011</a></li>
+	<li><a href="http://blog.codechef.com/2010/12/" title="December 2010">December 2010</a></li>
+	<li><a href="http://blog.codechef.com/2010/11/" title="November 2010">November 2010</a></li>
+	<li><a href="http://blog.codechef.com/2010/10/" title="October 2010">October 2010</a></li>
+	<li><a href="http://blog.codechef.com/2010/09/" title="September 2010">September 2010</a></li>
+	<li><a href="http://blog.codechef.com/2010/08/" title="August 2010">August 2010</a></li>
+	<li><a href="http://blog.codechef.com/2010/07/" title="July 2010">July 2010</a></li>
+	<li><a href="http://blog.codechef.com/2010/06/" title="June 2010">June 2010</a></li>
+	<li><a href="http://blog.codechef.com/2010/05/" title="May 2010">May 2010</a></li>
+	<li><a href="http://blog.codechef.com/2010/04/" title="April 2010">April 2010</a></li>
+	<li><a href="http://blog.codechef.com/2010/03/" title="March 2010">March 2010</a></li>
+	<li><a href="http://blog.codechef.com/2010/02/" title="February 2010">February 2010</a></li>
+	<li><a href="http://blog.codechef.com/2010/01/" title="January 2010">January 2010</a></li>
+	<li><a href="http://blog.codechef.com/2009/12/" title="December 2009">December 2009</a></li>
+	<li><a href="http://blog.codechef.com/2009/11/" title="November 2009">November 2009</a></li>
+	<li><a href="http://blog.codechef.com/2009/10/" title="October 2009">October 2009</a></li>
+	<li><a href="http://blog.codechef.com/2009/09/" title="September 2009">September 2009</a></li>
+	<li><a href="http://blog.codechef.com/2009/08/" title="August 2009">August 2009</a></li>
+	<li><a href="http://blog.codechef.com/2009/07/" title="July 2009">July 2009</a></li>
+	<li><a href="http://blog.codechef.com/2009/06/" title="June 2009">June 2009</a></li>
+	<li><a href="http://blog.codechef.com/2009/05/" title="May 2009">May 2009</a></li>
+	<li><a href="http://blog.codechef.com/2009/04/" title="April 2009">April 2009</a></li>
+	<li><a href="http://blog.codechef.com/2009/03/" title="March 2009">March 2009</a></li>
+	<li><a href="http://blog.codechef.com/2009/02/" title="February 2009">February 2009</a></li>
+	<li><a href="http://blog.codechef.com/2009/01/" title="January 2009">January 2009</a></li>
+		</ul>
+<h2>Company Blogs</h2>			<div class="textwidget"> <ul>
+	<li><a href="http://blog.directi.com/">Directi</a> <a href="http://blog.directi.com/feed/" class="feed-link"><img src="./Tutorial For Small Factorials   Codechef_files/rss.gif" title="Subscribe to this RSS feed"></a></li>
+	<li><a href="http://bhavin.directi.com/about-me/">CEOs Blog</a> <a href="http://bhavin.directi.com/about-me/feed/" class="feed-link"><img src="./Tutorial For Small Factorials   Codechef_files/rss.gif" title="Subscribe to this RSS feed"></a></li>
+ </ul></div>
+		<h2>Careers@Directi</h2>			<div class="textwidget"><div id="widget_content"></div><script type="text/javascript" src="http://cosmos.directi.com/widgets/careers/careers-openings.js" defer="defer"></script></div>
+							
+					<center>
+						<a href="http://blog.codechef.com/feed/"><img src="./Tutorial For Small Factorials   Codechef_files/subscribe.gif" title="Subscribe to this RSS feed" border="0"></a>
+					</center>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /CONTENT SIDEBAR -->
+		</div>
+		</div>
+	</div>
+</div><div style="position: static;"><div class="a2a_overlay" id="a2apage_overlay"></div><div class="a2a_menu a2a_full" id="a2apage_full"><div class="a2a_full_header"><div id="a2apage_find_container" class="a2a_menu_find_container"><input id="a2apage_find" class="a2a_menu_find" type="text" onclick="a2a.focus_find()" onkeyup="a2a.do_find()" autocomplete="off" title="Find any service"><span id="a2apage_find_icon" class="a2a_i_find" onclick="a2a.focus_find()"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="8 8 16 16"><path fill="#0166FF" d="M21.636,20.553l-3.291-3.291c0.536-0.753,0.858-1.667,0.858-2.661c0-2.542-2.061-4.602-4.602-4.602C12.06,9.999,10,12.059,10,14.601c0,2.541,2.06,4.602,4.602,4.602c0.994,0,1.907-0.32,2.659-0.856l3.291,3.29c0.401,0.402,0.968,0.486,1.268,0.184C22.119,21.521,22.036,20.953,21.636,20.553z M14.602,17.9c-1.823,0-3.3-1.477-3.3-3.3s1.477-3.3,3.3-3.3s3.3,1.477,3.3,3.3S16.424,17.9,14.602,17.9z"></path></svg></span></div></div><div class="a2a_full_services" id="a2apage_full_services"><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_facebook">Facebook</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_twitter">Twitter</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_google_plus">Google+</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_pinterest">Pinterest</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_linkedin">LinkedIn</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_email">Email</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_stumbleupon">StumbleUpon</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_reddit">Reddit</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_wordpress">WordPress</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_tumblr">Tumblr</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_delicious">Delicious</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_digg">Digg</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_google">Google Bookmarks</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_yahoo">Yahoo Bookmarks</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_whatsapp">WhatsApp</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_evernote">Evernote</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_line">Line</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_wanelo">Wanelo</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_app_net">App.net</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_buffer">Buffer</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_xing">XING</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_bebo">Bebo</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_orkut">Orkut</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_mixi">Mixi</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_vk">VK</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_pocket">Pocket</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_gmail">Google Gmail</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_mendeley">Mendeley</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_yahoo">Yahoo Mail</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_pinboard">Pinboard</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_outlook_com">Outlook.com</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_box">Box.net</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_aol">AOL Mail</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_instapaper">Instapaper</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_y18">Hacker News</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_springpad">Springpad</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_myspace">MySpace</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_flipboard">Flipboard</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_arto">Arto</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_aim">AIM</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_yim">Yahoo Messenger</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_mail_ru">Mail.Ru</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_plurk">Plurk</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_diaspora">Diaspora</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_fark">Fark</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_blogger">Blogger Post</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_typepad">TypePad Post</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_kindle">Kindle It</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_sina_weibo">Sina Weibo</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_baidu">Baidu</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_netlog">Netlog</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_citeulike">CiteULike</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_jumptags">Jumptags</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_funp">FunP</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_phonefavs">PhoneFavs</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_xerpi">Xerpi</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_netvouz">Netvouz</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_diigo">Diigo</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_bibsonomy">BibSonomy</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_blogmarks">BlogMarks</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_startaid">StartAid</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_khabbr">Khabbr</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_meneame">Meneame</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_yoolink">Yoolink</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_bookmarks_fr">Bookmarks.fr</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_technotizie">Technotizie</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_newsvine">NewsVine</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_friendfeed">FriendFeed</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_protopage">Protopage Bookmarks</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_blinklist">Blinklist</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_webnews">Webnews</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_segnalo">Segnalo</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_pusha">Pusha</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_youmob">YouMob</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_slashdot">Slashdot</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_allvoices">Allvoices</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_jamespot">Jamespot</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_twiddla">Twiddla</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_linkagogo">LinkaGoGo</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_nowpublic">NowPublic</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_livejournal">LiveJournal</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_linkatopia">Linkatopia</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_buddymarks">BuddyMarks</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_viadeo">Viadeo</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_wists">Wists</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_sitejot">SiteJot</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_dzone">DZone</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_care2">Care2 News</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_bitty">Bitty Browser</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_odnoklassniki">Odnoklassniki</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_symbaloo">Symbaloo Feeds</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_folkd">Folkd</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_newstrust">NewsTrust</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_amazon">Amazon Wish List</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_printfriendly">PrintFriendly</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_tuenti">Tuenti</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_rediff">Rediff MyPage</span></a><i class="a2a_i"></i><i class="a2a_i"></i></div><div class="a2a_full_footer"><a href="http://www.addtoany.com/" title="Share Buttons" target="_blank"><span class="a2a_i_a2a_sm">AddToAny</span></a></div></div><div id="a2apage_dropdown" class="a2a_menu a2a_mini" onmouseover="a2a.onMouseOver_stay()" onmouseout="a2a.onMouseOut_delay()" style="display:none"><div id="a2apage_title_container" class="a2a_menu_title_container" style="display:none"><input id="a2apage_title" class="a2a_menu_title"></div><div class="a2a_mini_services" id="a2apage_mini_services"><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_facebook">Facebook</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_twitter">Twitter</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_google_plus">Google+</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_pinterest">Pinterest</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_linkedin">LinkedIn</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_email">Email</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_stumbleupon">StumbleUpon</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_reddit">Reddit</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_wordpress">WordPress</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_tumblr">Tumblr</span></a></div><div id="a2apage_cols_container" class="a2a_cols_container"><div class="a2a_col1" id="a2apage_col1"></div><div id="a2apage_2_col1" style="display:none"><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_gmail">Google Gmail</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_yahoo">Yahoo Mail</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_outlook_com">Outlook.com</span></a><a rel="nofollow" class="a2a_i" href="http://blog.codechef.com/" target="_blank"><span class="a2a_i_aol">AOL Mail</span></a><a rel="nofollow" class="a2a_i a2a_emailer" href="http://blog.codechef.com/" target="_blank" id="a2apage_any_email"><span class="a2a_i_email">Any email</span></a><a rel="nofollow" class="a2a_i a2a_emailer a2a_email_client" href="http://blog.codechef.com/" target="" id="a2apage_email_client"><span class="a2a_i_email">Email app</span></a></div><div class="a2a_clear"></div></div><div class="a2apage_wide a2a_wide"><a href="" id="a2apage_show_more_less" class="a2a_menu_show_more_less a2a_more" onmouseover="img=this.firstChild;if(a2a.c.color_arrow_hover==&#39;fff&#39;){if(img.className.indexOf(&#39;_wt&#39;)==-1)img.className+=&#39;_wt&#39;}else img.className=img.className.replace(/_wt/,&#39;&#39;)" onmouseout="img=this.firstChild;if(a2a.c.color_arrow==&#39;fff&#39;){if(img.className.indexOf(&#39;_wt&#39;)==-1)img.className+=&#39;_wt&#39;}else img.className=img.className.replace(/_wt/,&#39;&#39;)" title="Show all"><span class="a2a_i_a2a">More…</span></a></div></div><div style="height: 1px; width: 1px; position: absolute; z-index: 100000; top: 0px; visibility: hidden;"><iframe id="a2apage_sm_ifr" height="1" width="1" title="AddToAny Utility Frame" transparency="true" allowtransparency="true" frameborder="0" src="./Tutorial For Small Factorials   Codechef_files/sm11.htm" style="height: 1px; width: 1px; border: 0px; left: 0px; top: 0px; position: absolute; z-index: 100000; display: none;"></iframe></div></div>
+<!-- /CONTENT REGIONS -->
+
+
+<!-- FOOTER -->
+<div id="cc-footer" class="cc-wrapper">
+	<div class="cc-inner-wrapper">
+		<!-- SECOND NAV -->
+		<div class="cc-cols-2">
+			<div id="cc-secondary-nav">
+				<ul>
+					<!-- <li><a href="http://blog.corp.pw/" target="_blank">.pw Corp Blog</a></li>
+					<li><a href="http://start.pw/" target="_blank">Vision</li> -->
+					<li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+					<li><a href="http://www.directi.com/" target="_blank">About Directi</a></li>
+					<li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+					<!-- <li><a href="http://wiki.directi.com/" target="_blank">Wiki</a></li>
+					<li><a href="http://wiki.directi.com/display/corp/Home" target="_blank">About</a></li> -->
+				</ul>
+				<ul>
+					<li><a href="http://www.codechef.com/campus/">CodeChef Campus Chapters</a></li>
+					<li><a href="http://www.codechef.com/bloggers/">Blogger Community Program</a></li>
+					<li><a href="http://www.codechef.com/usergroups/">User Group Outreach Program</a></li>
+				</ul>
+			</div>
+			<div id="cc-fineprint">
+				<p>© 2009, Directi Group. All Rights Reserved.</p>
+			</div>
+		</div>
+		<!-- /SECOND NAV -->
+		<!-- LEGAL & COPYRIGHT -->
+		<div class="cc-cols-2">
+			<div id="cc-sponsor-strip">
+				<a href="http://www.directi.com/" target="_blank"><img src="./Tutorial For Small Factorials   Codechef_files/footer-sponsor-strip.gif" alt="Sponsors"></a>
+			</div>
+		</div>
+		<!-- /LEGAL & COPYRIGHT -->
+	</div>
+</div>
+<!-- /FOOTER -->
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Tutorial For Small Factorials   Codechef_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4090524-5");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<p><br style="clear: left;"></p>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"q16Cj1a8gN00iz", domain:"codechef.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript>&lt;img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=q16Cj1a8gN00iz" style="display:none" height="1" width="1" alt="" /&gt;</noscript>
+<!-- End Alexa Certify Javascript -->  
+</body></html>

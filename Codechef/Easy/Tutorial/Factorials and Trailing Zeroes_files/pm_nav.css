@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* formatting the "Find Your Lesson" tag (begin) */
+
+.findButton {
+	float: left;
+	width: 180px;
+	height: auto;
+	color: rgb(255, 255, 255);
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 15px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+	line-height: 1.5em;
+	text-shadow: rgb(53, 53, 53) 2px 2px 2px;
+	background-color: purple;
+	text-align: center;
+	padding: 3px 0px 3px 0px;
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* formatting PM-Plus's "search" box (begin) */
+
+#searchForm {
+	padding:8px 0px 0px 0px;
+}
+
+/* formatting PM-Plus's "search" box (begin) */
+
+	/* creating skinny white rules replacing the <hr> tags (begin) */
+
+.wt_rules {
+	width: 180px;
+	height: 10px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 10px;
+}
+
+	/* formatting the PM-Plus right-hand nav bar (begin) */
+
+#navRt {
+	width: 180px;
+	/*float: right;*/
+	padding: 0 -10px;
+	line-height: 1.4em;
+	text-align: center;
+	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 15px;
+	background-color: #F8E7C8;	
+}
+
+		/* formatting section's <p> tags */
+
+#navRt p {
+	font-weight:bold;
+}
+
+		/* formatting section's "textbook" graphic */
+
+#textbook_gif {
+	padding:0px 15px;
+}
+
