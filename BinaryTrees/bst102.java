@@ -69,14 +69,18 @@ public class bst102 {
 		else if(key > root.key) {
 			root.right = deleteRec(root.right, key);
 		}
-		else {
+		else { // if key is same as root's key, then delete this node
+			// node with only one child or no child
 			if(root.left == null) {
 				return root.right;
 			}
 			else if(root.right == null) {
 				return root.left;
 			}
+			// node with two children, then get the inorder successor (smallest
+            // in the right subtree)
 			root.key = minValue(root.right);
+			// Deleting the inorder successor
 			root.right = deleteRec(root.right, key);
 		}
 		return root;
